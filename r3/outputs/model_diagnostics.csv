@@ -1,0 +1,13 @@
+metric,value
+elpd_loo,3211.2589846105884
+p_loo,71.18317804069011
+elpd_loo_se,69.1722685878898
+elpd_waic,3211.4437876040774
+p_waic,70.99837504720142
+elpd_waic_se,69.17411622621657
+pareto_k_n,2777.0
+pareto_k_lt_0_7_rate,1.0
+pareto_k_0_7_1_rate,0.0
+pareto_k_gt_1_rate,0.0
+pareto_k_mean,0.04149066758164147
+pareto_k_max,0.4398252341172957

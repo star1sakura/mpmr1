@@ -1,16 +1,16 @@
 term,coef
-const,-1.4596181637005414
-mean_J,0.5859872593191635
-mean_p,1.3645036427201247
-age,-0.29318216287477994
-region_Midwest,0.0
-region_Northeast,0.0549770582581147
-region_Other,-0.37008941796931794
-region_South,0.7189373725645974
-region_West,0.16635764062501673
-industry_consolidated_Athlete,0.4104573310982581
-industry_consolidated_Comedian,-0.7858228825924385
-industry_consolidated_Model,-1.1712899234535248
-industry_consolidated_Other_Industry,0.8229849463389012
-industry_consolidated_Singer/Rapper,-0.021691773188402264
-industry_consolidated_Tv Personality,0.37657717436831845
+const,-1.9737633753295942
+mean_J_z,0.7468108057916719
+mean_p_hat_z,1.1593012852017524
+age_z,-0.17892132715253556
+region_Midwest,0.5072616147474687
+region_Northeast,0.44223074292165293
+region_South,1.1775055395300122
+region_Unknown,-0.8477739632579478
+region_West,0.6158826915627335
+industry_consolidated_Athlete,0.507808465245036
+industry_consolidated_Comedian,-0.33988339843655274
+industry_consolidated_Model,-1.3427859136286764
+industry_consolidated_Other_Industry,1.0079140660622492
+industry_consolidated_Singer/Rapper,-0.12755138934898413
+industry_consolidated_Tv Personality,0.4564740920344353
