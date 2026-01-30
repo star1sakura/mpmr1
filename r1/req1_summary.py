@@ -4,11 +4,13 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
+# 获取脚本所在目录
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 def parse_args():
     ap = argparse.ArgumentParser(description="Summarize Requirement 1 outputs with tables and plots.")
-    ap.add_argument("--votes", default="outputs/req1_vote_estimates.csv", help="vote estimates CSV")
-    ap.add_argument("--out-dir", default="outputs/summary", help="output directory")
+    ap.add_argument("--votes", default=os.path.join(SCRIPT_DIR, "outputs/req1_vote_estimates.csv"), help="vote estimates CSV")
+    ap.add_argument("--out-dir", default=os.path.join(SCRIPT_DIR, "outputs/summary"), help="output directory")
     return ap.parse_args()
 
 

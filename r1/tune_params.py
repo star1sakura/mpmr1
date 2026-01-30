@@ -9,12 +9,14 @@ from itertools import product
 import numpy as np
 import pandas as pd
 
+# 获取脚本所在目录
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 def parse_args():
     ap = argparse.ArgumentParser(description="Parameter tuning for req1_solve.py")
-    ap.add_argument("--tmp-out-dir", default="outputs/tune_tmp", help="temporary output directory")
-    ap.add_argument("--results-dir", default="outputs/tuning", help="results output directory")
-    ap.add_argument("--final-out-dir", default="outputs", help="final output directory")
+    ap.add_argument("--tmp-out-dir", default=os.path.join(SCRIPT_DIR, "outputs/tune_tmp"), help="temporary output directory")
+    ap.add_argument("--results-dir", default=os.path.join(SCRIPT_DIR, "outputs/tuning"), help="results output directory")
+    ap.add_argument("--final-out-dir", default=os.path.join(SCRIPT_DIR, "outputs"), help="final output directory")
     ap.add_argument("--ilp-time-limit", type=int, default=10, help="ILP time limit seconds")
     ap.add_argument("--skip-final", action="store_true", help="skip final best run")
     return ap.parse_args()
@@ -98,7 +100,7 @@ def compute_season_stats(votes_csv):
 def run_req1(python_exec, out_dir, alpha_pop, beta, lambda_smooth, rho_pop, kappa_rank, ilp_time_limit):
     cmd = [
         python_exec,
-        "req1_solve.py",
+        os.path.join(SCRIPT_DIR, "req1_solve.py"),
         "--out-dir",
         out_dir,
         "--alpha-pop",

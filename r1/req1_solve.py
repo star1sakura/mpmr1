@@ -16,17 +16,20 @@ except Exception:
     PULP_AVAILABLE = False
 
 
+# 获取脚本所在目录
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+
 def parse_args():
     ap = argparse.ArgumentParser(description="Estimate weekly fan vote shares for MCM Problem C (Requirement 1).")
-    ap.add_argument("--data", default="2026_MCM_Problem_C_Data.csv", help="CSV path")
-    ap.add_argument("--out-dir", default="outputs", help="output directory")
+    ap.add_argument("--data", default=os.path.join(SCRIPT_DIR, "2026_MCM_Problem_C_Data.csv"), help="CSV path")
+    ap.add_argument("--out-dir", default=os.path.join(SCRIPT_DIR, "outputs"), help="output directory")
     ap.add_argument("--total-votes", type=float, default=1e7, help="weekly total votes scale")
-    ap.add_argument("--alpha-pop", type=float, default=0.7, help="popularity weight in prior")
-    ap.add_argument("--beta", type=float, default=1.0, help="judge score weight in prior")
-    ap.add_argument("--lambda-smooth", type=float, default=0.5, help="smoothness weight")
+    ap.add_argument("--alpha-pop", type=float, default=0.4, help="popularity weight in prior")
+    ap.add_argument("--beta", type=float, default=1.2, help="judge score weight in prior")
+    ap.add_argument("--lambda-smooth", type=float, default=0.7, help="smoothness weight")
     ap.add_argument("--tau-entropy", type=float, default=0.01, help="entropy weight")
-    ap.add_argument("--kappa-rank", type=float, default=0.4, help="rank-to-share temperature")
-    ap.add_argument("--rho-pop", type=float, default=0.25, help="popularity update rate")
+    ap.add_argument("--kappa-rank", type=float, default=0.5, help="rank-to-share temperature")
+    ap.add_argument("--rho-pop", type=float, default=0.3, help="popularity update rate")
     ap.add_argument("--ilp-time-limit", type=int, default=10, help="ILP time limit seconds")
     ap.add_argument("--eps", type=float, default=1e-9, help="epsilon for logs")
     ap.add_argument("--uncertainty", action="store_true", help="compute uncertainty intervals (percent seasons exact, rank seasons sampled)")
