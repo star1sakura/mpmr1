@@ -1,6 +1,6 @@
 # 项目说明（面向使用者）
 
-本项目包含 2026 MCM Problem C 的 **r1（要求一）投票估计** 与 **r2（要求二）方法对比**，输出后续题目（2–5）可直接使用的特征表、对比表与图表。
+本项目包含 2026 MCM Problem C 的 **r1（要求一）投票估计**、**r2（要求二）方法对比** 与 **r3（要求三）因素分析**，输出后续题目（2–5）可直接使用的特征表、对比表与图表。
 
 适用对象：负责后续题目撰写与分析的项目参与者（直接使用本项目输出数据与图表即可）。
 
@@ -16,6 +16,10 @@
 - `r2/req2_analysis.py`：要求二方法对比分析脚本
 - `r2/要求二实现方案.md`：r2 详细说明文档
 - `r2/outputs/`：r2 运行输出目录
+- `r3/req3_analysis.py`：要求三因素分析脚本（Beta 混合效应 + Time-varying Cox）
+- `r3/问题三实现方案.md`：r3 详细说明文档
+- `r3/summary.md`：r3 摘要文档（方法与输出导读）
+- `r3/outputs/`：r3 运行输出目录
 
 ---
 
@@ -36,6 +40,18 @@ source .venv/bin/activate
 
 ```bash
 pip install "pulp<3" numpy pandas scipy matplotlib
+```
+
+或直接：
+
+```bash
+pip install -r requirements.txt
+```
+
+如需运行 r3（Beta 混合效应 + Time-varying Cox）：
+
+```bash
+pip install "pulp<3" numpy pandas scipy matplotlib statsmodels lifelines bambi pymc arviz
 ```
 
 如需代理（示例）：
@@ -262,6 +278,47 @@ python r2/req2_analysis.py --votes r1/outputs/req1_vote_estimates.csv
 - `r2/outputs/summary_table.csv`：结构化指标汇总表
 
 完整说明与输出清单请见：`r2/要求二实现方案.md`
+
+---
+
+## 要求三（r3）使用
+
+前置条件：需要先生成 `r1/outputs/req1_features.csv`。
+
+运行方式（需要 bambi/pymc/lifelines 等依赖）：
+
+```bash
+python r3/req3_analysis.py
+```
+
+常用参数：
+
+```bash
+python r3/req3_analysis.py --beta-draws 1000 --beta-tune 1000 --beta-chains 4
+```
+
+模型对比（仅 M0 vs M3，K-fold 更稳健）：
+
+```bash
+python r3/req3_analysis.py \
+  --compare-models --compare-minimal \
+  --compare-folds 3 \
+  --compare-draws 2000 --compare-tune 2000 \
+  --compare-chains 4 --compare-target-accept 0.99
+```
+
+关键输出：
+
+- `r3/outputs/beta_fan_effects.csv`：粉丝投票 Beta 混合效应固定效应
+- `r3/outputs/beta_marginal_effects.csv`：粉丝投票边际效应
+- `r3/outputs/cox_model_summary_coef.csv`：Time-varying Cox 模型系数
+- `r3/outputs/model_diagnostics.csv`：LOO/WAIC + Pareto-k 诊断摘要
+- `r3/outputs/model_comparison.csv`：M0 vs M3 对比（LOO/K-fold）
+- `r3/outputs/kfold_results.csv`：K-fold 每折 ELPD
+- `r3/outputs/summary.md`：摘要页（自动生成）
+- `r3/outputs/interpretation_report.md`：自动解读报告
+
+完整说明与输出清单请见：`r3/问题三实现方案.md` 与 `r3/summary.md`
 
 ---
 

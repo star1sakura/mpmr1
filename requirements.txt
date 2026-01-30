@@ -1,0 +1,10 @@
+pulp<3
+numpy
+pandas
+scipy
+matplotlib
+statsmodels
+lifelines
+bambi
+pymc
+arviz
