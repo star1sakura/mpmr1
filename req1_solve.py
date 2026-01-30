@@ -8,6 +8,12 @@ from typing import Dict, List, Tuple
 import numpy as np
 import pandas as pd
 from scipy.optimize import minimize, linprog
+try:
+    import pulp
+    PULP_AVAILABLE = True
+except Exception:
+    pulp = None
+    PULP_AVAILABLE = False
 
 
 def parse_args():
@@ -15,10 +21,13 @@ def parse_args():
     ap.add_argument("--data", default="2026_MCM_Problem_C_Data.csv", help="CSV path")
     ap.add_argument("--out-dir", default="outputs", help="output directory")
     ap.add_argument("--total-votes", type=float, default=1e7, help="weekly total votes scale")
+    ap.add_argument("--alpha-pop", type=float, default=0.7, help="popularity weight in prior")
     ap.add_argument("--beta", type=float, default=1.0, help="judge score weight in prior")
     ap.add_argument("--lambda-smooth", type=float, default=0.5, help="smoothness weight")
     ap.add_argument("--tau-entropy", type=float, default=0.01, help="entropy weight")
     ap.add_argument("--kappa-rank", type=float, default=0.4, help="rank-to-share temperature")
+    ap.add_argument("--rho-pop", type=float, default=0.25, help="popularity update rate")
+    ap.add_argument("--ilp-time-limit", type=int, default=10, help="ILP time limit seconds")
     ap.add_argument("--eps", type=float, default=1e-9, help="epsilon for logs")
     ap.add_argument("--uncertainty", action="store_true", help="compute uncertainty intervals (percent seasons exact, rank seasons sampled)")
     ap.add_argument("--rank-samples", type=int, default=50, help="samples for rank-season uncertainty")
@@ -112,13 +121,30 @@ def simplex_projection(n: int) -> np.ndarray:
     return np.full(n, 1.0 / n)
 
 
-def solve_week_percent(Jvec, prev_p, E_idx, has_save, beta, lambda_smooth, tau, eps):
-    n = len(Jvec)
-    q = Jvec / np.sum(Jvec)
+def build_popularity_vector(idx_list: List[int], prev_p: np.ndarray, pop_map: Dict[int, float], eps: float) -> np.ndarray:
+    pop_vec = np.zeros(len(idx_list), dtype=float)
+    for pos, i in enumerate(idx_list):
+        if i in pop_map:
+            pop_vec[pos] = pop_map[i]
+        else:
+            pop_vec[pos] = math.log(max(prev_p[pos], eps))
+    return pop_vec
+
+
+def build_prior_share(Jvec: np.ndarray, prev_p: np.ndarray, pop_vec: np.ndarray,
+                      alpha_pop: float, beta: float, lambda_smooth: float, eps: float) -> np.ndarray:
     zJ = zscore(Jvec, eps)
     prev_p = np.clip(prev_p, eps, 1.0)
-    logit = beta * zJ + lambda_smooth * np.log(prev_p)
-    p_tilde = softmax(logit)
+    pop_z = zscore(pop_vec, eps) if pop_vec is not None else np.zeros_like(zJ)
+    logit = alpha_pop * pop_z + beta * zJ + lambda_smooth * np.log(prev_p)
+    return softmax(logit)
+
+
+def solve_week_percent(Jvec, prev_p, p_tilde, E_idx, has_save, lambda_smooth, tau, eps):
+    n = len(Jvec)
+    q = Jvec / np.sum(Jvec)
+    prev_p = np.clip(prev_p, eps, 1.0)
+    p_tilde = np.clip(p_tilde, eps, 1.0)
 
     def objective(p):
         p = np.clip(p, eps, 1.0)
@@ -213,10 +239,10 @@ def adjust_ranks_for_constraints(rV, rJ, eliminated, bottom_k):
     return rV
 
 
-def solve_week_rank(Jvec, prev_p, E_idx, has_save, kappa):
+def solve_week_rank_heuristic(Jvec, p_prior, E_idx, has_save, kappa):
     n = len(Jvec)
     rJ = rank_desc(Jvec)
-    r0 = rank_desc(prev_p)
+    r0 = rank_desc(p_prior)
 
     # initial rV from r0 ordering
     order = np.argsort(r0)
@@ -231,6 +257,92 @@ def solve_week_rank(Jvec, prev_p, E_idx, has_save, kappa):
     p = np.exp(-kappa * rV)
     p = p / np.sum(p)
     return p
+
+
+def solve_week_rank_ilp(Jvec, p_prior, E_idx, has_save, kappa, time_limit=10):
+    if not PULP_AVAILABLE:
+        return None
+    n = len(Jvec)
+    rJ = rank_desc(Jvec)
+    r0 = rank_desc(p_prior)
+
+    def build_model(eliminated_set=None, bottom2_pair=None):
+        prob = pulp.LpProblem("rank_vote", pulp.LpMinimize)
+        x = pulp.LpVariable.dicts("x", (range(n), range(1, n + 1)), lowBound=0, upBound=1, cat="Binary")
+        rV = {i: pulp.lpSum(r * x[i][r] for r in range(1, n + 1)) for i in range(n)}
+
+        for i in range(n):
+            prob += pulp.lpSum(x[i][r] for r in range(1, n + 1)) == 1
+        for r in range(1, n + 1):
+            prob += pulp.lpSum(x[i][r] for i in range(n)) == 1
+
+        d = pulp.LpVariable.dicts("d", range(n), lowBound=0, cat="Continuous")
+        for i in range(n):
+            prob += d[i] >= rV[i] - r0[i]
+            prob += d[i] >= -(rV[i] - r0[i])
+
+        if eliminated_set:
+            if bottom2_pair is None:
+                survivors = [i for i in range(n) if i not in eliminated_set]
+                for e in eliminated_set:
+                    for s in survivors:
+                        prob += (rJ[e] + rV[e]) >= (rJ[s] + rV[s])
+            else:
+                e, b = bottom2_pair
+                others = [i for i in range(n) if i not in {e, b}]
+                for j in others:
+                    prob += (rJ[e] + rV[e]) >= (rJ[j] + rV[j])
+                    prob += (rJ[b] + rV[b]) >= (rJ[j] + rV[j])
+
+        prob += pulp.lpSum(d[i] for i in range(n))
+        return prob, x
+
+    def solve_model(eliminated_set=None, bottom2_pair=None):
+        prob, x = build_model(eliminated_set, bottom2_pair)
+        solver = pulp.PULP_CBC_CMD(msg=False, timeLimit=time_limit)
+        status = prob.solve(solver)
+        if pulp.LpStatus.get(status) != "Optimal":
+            return None
+        rV_sol = np.zeros(n, dtype=float)
+        for i in range(n):
+            val = 0.0
+            for r in range(1, n + 1):
+                v = x[i][r].value()
+                if v is None:
+                    return None
+                val += r * v
+            rV_sol[i] = val
+        p = np.exp(-kappa * rV_sol)
+        p = p / np.sum(p)
+        return p, pulp.value(prob.objective)
+
+    if not E_idx:
+        solved = solve_model()
+        return solved[0] if solved else None
+
+    if has_save and len(E_idx) == 1:
+        e = E_idx[0]
+        best = None
+        for b in range(n):
+            if b == e:
+                continue
+            solved = solve_model(eliminated_set=E_idx, bottom2_pair=(e, b))
+            if not solved:
+                continue
+            p, obj = solved
+            if best is None or obj < best[0]:
+                best = (obj, p)
+        return best[1] if best else None
+
+    solved = solve_model(eliminated_set=E_idx)
+    return solved[0] if solved else None
+
+
+def solve_week_rank(Jvec, p_prior, E_idx, has_save, kappa, ilp_time_limit=10):
+    p = solve_week_rank_ilp(Jvec, p_prior, E_idx, has_save, kappa, time_limit=ilp_time_limit)
+    if p is not None:
+        return p
+    return solve_week_rank_heuristic(Jvec, p_prior, E_idx, has_save, kappa)
 
 
 def predict_elimination(rule, has_save, Jvec, p):
@@ -302,14 +414,14 @@ def uncertainty_percent(Jvec, E_idx, has_save):
     return U
 
 
-def uncertainty_rank(Jvec, prev_p, E_idx, has_save, kappa, samples, eps):
+def uncertainty_rank(Jvec, p_prior, E_idx, has_save, kappa, samples, eps, ilp_time_limit):
     n = len(Jvec)
     Ps = []
     for _ in range(samples):
         noise = np.random.normal(0, 0.01, size=n)
-        p0 = np.clip(prev_p + noise, eps, 1.0)
+        p0 = np.clip(p_prior + noise, eps, 1.0)
         p0 = p0 / np.sum(p0)
-        p = solve_week_rank(Jvec, p0, E_idx, has_save, kappa)
+        p = solve_week_rank(Jvec, p0, E_idx, has_save, kappa, ilp_time_limit=ilp_time_limit)
         Ps.append(p)
     Ps = np.array(Ps)
     low = np.quantile(Ps, 0.05, axis=0)
@@ -347,6 +459,7 @@ def main():
         save = has_judge_save(season)
         # init prev_p
         prev_p_map: Dict[int, float] = {}
+        pop_map: Dict[int, float] = {}
         for w in weeks:
             # active contestants: J not NaN and >0
             Jcol = totals_df.loc[sdf.index, w]
@@ -365,11 +478,19 @@ def main():
             else:
                 prev_p = simplex_projection(len(idx_list))
 
+            pop_vec = build_popularity_vector(idx_list, prev_p, pop_map, args.eps)
+            p_prior = build_prior_share(Jvec, prev_p, pop_vec,
+                                        args.alpha_pop, args.beta, args.lambda_smooth, args.eps)
+
             if rule == "PERCENT":
-                p = solve_week_percent(Jvec, prev_p, [idx_list.index(i) for i in E_idx_local], save,
-                                       args.beta, args.lambda_smooth, args.tau_entropy, args.eps)
+                p = solve_week_percent(Jvec, prev_p, p_prior, [idx_list.index(i) for i in E_idx_local], save,
+                                       args.lambda_smooth, args.tau_entropy, args.eps)
             else:
-                p = solve_week_rank(Jvec, prev_p, [idx_list.index(i) for i in E_idx_local], save, args.kappa_rank)
+                p = solve_week_rank(Jvec, p_prior, [idx_list.index(i) for i in E_idx_local], save,
+                                    args.kappa_rank, ilp_time_limit=args.ilp_time_limit)
+
+            q = Jvec / np.sum(Jvec)
+            momentum = p - prev_p
 
             # metrics
             if E_idx_local:
@@ -390,8 +511,8 @@ def main():
                 if rule == "PERCENT":
                     U = uncertainty_percent(Jvec, [idx_list.index(i) for i in E_idx_local], save)
                 else:
-                    U = uncertainty_rank(Jvec, prev_p, [idx_list.index(i) for i in E_idx_local], save,
-                                         args.kappa_rank, args.rank_samples, args.eps)
+                    U = uncertainty_rank(Jvec, p_prior, [idx_list.index(i) for i in E_idx_local], save,
+                                         args.kappa_rank, args.rank_samples, args.eps, args.ilp_time_limit)
 
             # write records
             for pos, i in enumerate(idx_list):
@@ -404,6 +525,10 @@ def main():
                     "J_total": float(Jvec[pos]),
                     "p_hat": float(p[pos]),
                     "V_hat": float(p[pos] * args.total_votes),
+                    "judge_share": float(q[pos]),
+                    "fan_judge_gap": float(p[pos] - q[pos]),
+                    "momentum": float(momentum[pos]),
+                    "popularity_score": float(pop_vec[pos]),
                     "eliminated": int(i in E_idx_local),
                 }
                 if U is not None:
@@ -412,10 +537,33 @@ def main():
 
             # update prev_p map
             prev_p_map = {i: p[idx_list.index(i)] for i in idx_list}
+            for pos, i in enumerate(idx_list):
+                pop_map[i] = (1.0 - args.rho_pop) * pop_vec[pos] + args.rho_pop * math.log(max(p[pos], args.eps))
 
     out_df = pd.DataFrame(records)
     out_csv = os.path.join(args.out_dir, "req1_vote_estimates.csv")
     out_df.to_csv(out_csv, index=False)
+
+    features_cols = [
+        "season",
+        "week",
+        "contestant_id",
+        "celebrity_name",
+        "ballroom_partner",
+        "J_total",
+        "p_hat",
+        "V_hat",
+        "judge_share",
+        "fan_judge_gap",
+        "momentum",
+        "popularity_score",
+        "eliminated",
+    ]
+    if "uncertainty_width" in out_df.columns:
+        features_cols.append("uncertainty_width")
+    features_df = out_df[features_cols]
+    features_csv = os.path.join(args.out_dir, "req1_features.csv")
+    features_df.to_csv(features_csv, index=False)
 
     metrics_out = {
         "EMR": metrics["EMR"] / metrics["EMR_denom"] if metrics["EMR_denom"] else None,
