@@ -1,0 +1,422 @@
+season,contestant_id,celebrity_name,age,region,industry,ballroom_partner,mean_J,mean_p,max_week,eliminated_any,elim_week,duration,event,finalist,industry_consolidated
+1,0,John O'Hurley,50,Northeast,Actor/Actress,Charlotte Jorgensen,24.166666666666668,0.3847087611247943,6,0,,6,0,1,Actor/Actress
+1,1,Kelly Monaco,29,Northeast,Actor/Actress,Alec Mazo,21.333333333333332,0.21174399151487255,6,0,,6,0,1,Actor/Actress
+1,2,Evander Holyfield,42,South,Athlete,Edyta Sliwinska,15.0,0.06881584613244274,3,1,3.0,3,1,0,Athlete
+1,3,Rachel Hunter,35,Other,Model,Jonathan Roberts,23.75,0.2159600188651305,4,1,4.0,4,1,0,Model
+1,4,Joey McIntyre,32,Northeast,Singer/Rapper,Ashly DelGrosso,21.1,0.24492214337222923,5,0,,5,0,1,Singer/Rapper
+1,5,Trista Sutter,32,Midwest,TV Personality,Louis van Amstel,18.5,0.0631925767215008,2,1,2.0,2,1,0,Tv Personality
+2,6,Tatum O'Neal,42,West,Actor/Actress,Nick Kosovich,20.0,0.12377887316374085,2,1,2.0,2,1,0,Actor/Actress
+2,7,Tia Carrere,39,West,Actor/Actress,Maksim Chmerkoskiy,23.0,0.07198149790469144,5,1,5.0,5,1,0,Actor/Actress
+2,8,George Hamilton,66,South,Actor/Actress,Edyta Sliwinska,21.666666666666668,0.029505551126434316,6,1,6.0,6,1,0,Actor/Actress
+2,9,Lisa Rinna,42,West,Actor/Actress,Louis van Amstel,24.071428571428573,0.07587287075695937,7,1,7.0,7,1,0,Actor/Actress
+2,10,Stacy Keibler,26,South,Athlete,Tony Dovolani,27.520812499999998,0.3278980371607588,8,0,,8,0,1,Athlete
+2,11,Jerry Rice,43,South,Athlete,Anna Trebunskaya,22.520825000000002,0.1036168510859105,8,0,,8,0,1,Athlete
+2,12,Giselle Fernandez,44,Other,News Anchor,Jonathan Roberts,23.0,0.10140333371878824,3,1,3.0,3,1,0,Other_Industry
+2,13,Master P,35,South,Singer/Rapper,Ashly DelGrosso,12.5,0.05718839984960887,4,1,4.0,4,1,0,Singer/Rapper
+2,14,Drew Lachey,29,Midwest,Singer/Rapper,Cheryl Burke,27.437475,0.3368634942915968,8,0,,8,0,1,Singer/Rapper
+2,15,Kenny Mayne,46,West,Sports Broadcaster,Andrea Hale,13.0,0.0044007012308088,1,1,1.0,1,1,0,Other_Industry
+3,16,Harry Hamlin,54,West,Actor/Actress,Ashly DelGrosso,20.0,0.05367412534766023,3,1,3.0,3,1,0,Actor/Actress
+3,17,Vivica A. Fox,42,Midwest,Actor/Actress,Nick Kosovich,24.25,0.1102199616586384,4,1,4.0,4,1,0,Actor/Actress
+3,18,Monique Coleman,25,South,Actor/Actress,Louis van Amstel,24.9375,0.10893498043179882,8,1,8.0,8,1,0,Actor/Actress
+3,19,Joey Lawrence,30,Northeast,Actor/Actress,Edyta Sliwinska,25.88888888888889,0.1757064309756441,9,0,,9,0,1,Actor/Actress
+3,20,Mario Lopez,32,West,Actor/Actress,Karina Smirnoff,26.866660000000003,0.4786527209263716,10,0,,10,0,1,Actor/Actress
+3,21,Emmitt Smith,37,South,Athlete,Cheryl Burke,25.76666,0.08641442838140027,10,0,,10,0,1,Athlete
+3,22,Shanna Moakler,31,Northeast,Model,Jesse DeSoto,20.0,0.05421881796010325,2,1,2.0,2,1,0,Model
+3,23,Willa Ford,25,South,Singer/Rapper,Maksim Chmerkoskiy,24.4,0.07349245142136229,5,1,5.0,5,1,0,Singer/Rapper
+3,24,Sara Evans,35,Midwest,Singer/Rapper,Tony Dovolani,21.0,0.06626275274201601,5,0,,5,0,1,Singer/Rapper
+3,25,Jerry Springer,62,Other,TV Personality,Kym Johnson,20.428571428571427,0.06171629576851075,7,1,7.0,7,1,0,Tv Personality
+3,26,Tucker Carlson,37,West,TV Personality,Elena Grinenko,12.0,0.0553608348928841,1,1,1.0,1,1,0,Tv Personality
+4,27,John Ratzenberger,59,Northeast,Actor/Actress,Edyta Sliwinska,19.071428571428573,0.04710860225173125,7,1,7.0,7,1,0,Actor/Actress
+4,28,Ian Ziering,42,Northeast,Actor/Actress,Cheryl Burke,24.27777777777778,0.05968472148879078,9,1,9.0,9,1,0,Actor/Actress
+4,29,Clyde Drexler,44,South,Athlete,Elena Grinenko,15.6,0.05168468369823672,5,1,5.0,5,1,0,Athlete
+4,30,Laila Ali,29,South,Athlete,Maksim Chmerkoskiy,26.233320000000003,0.18156080960399862,10,0,,10,0,1,Athlete
+4,31,Apolo Anton Ohno,24,West,Athlete,Julianne Hough,26.883319999999998,0.11791101553544478,10,0,,10,0,1,Athlete
+4,32,Shandi Finnessey,28,Midwest,Beauty Pagent,Brian Fortuna,20.0,0.05087157314379533,3,1,3.0,3,1,0,Other_Industry
+4,33,Paulina Porizkova,41,Other,Model,Alec Mazo,20.0,0.0550103179902076,2,1,2.0,2,1,0,Model
+4,34,Heather Mills,39,Other,Model,Jonathan Roberts,22.166666666666668,0.05245417824146955,6,1,6.0,6,1,0,Model
+4,35,Billy Ray Cyrus,45,South,Singer/Rapper,Karina Smirnoff,19.0,0.04859869143812071,8,1,8.0,8,1,0,Singer/Rapper
+4,36,Joey Fatone,30,Northeast,Singer/Rapper,Kym Johnson,26.76665,0.47122696380385243,10,0,,10,0,1,Singer/Rapper
+4,37,Leeza Gibbons,50,South,TV Personality,Tony Dovolani,19.0,0.050379006637258826,4,1,4.0,4,1,0,Tv Personality
+5,38,Cameron Mathison,38,Other,Actor/Actress,Edyta Sliwinska,24.25,0.06328464708403159,8,1,8.0,8,1,0,Actor/Actress
+5,39,Jane Seymour,56,Other,Actor/Actress,Tony Dovolani,24.428571428571427,0.07710958983642016,7,1,7.0,7,1,0,Actor/Actress
+5,40,Sabrina Bryan,23,West,Actor/Actress,Mark Ballas,27.0,0.4156865001630862,6,1,6.0,6,1,0,Actor/Actress
+5,41,Jennie Garth,35,Midwest,Actor/Actress,Derek Hough,25.27777777777778,0.06635834754955698,9,1,9.0,9,1,0,Actor/Actress
+5,42,Floyd Mayweather Jr. ,30,Midwest,Athlete,Karina Smirnoff,20.75,0.04304872321345893,4,1,4.0,4,1,0,Athlete
+5,43,Josie Maran,29,West,Model,Alec Mazo,16.0,0.0520272234544791,1,1,1.0,1,1,0,Model
+5,44,Albert Reed,22,South,Model,Anna Trebunskaya,21.0,0.04728691224951895,2,1,2.0,2,1,0,Model
+5,45,Helio Castroneves,32,Other,Racing Driver,Julianne Hough,26.649990000000003,0.13838180055673616,10,0,,10,0,1,Other_Industry
+5,46,Mel B,32,Other,Singer/Rapper,Maksim Chmerkoskiy,27.23332,0.3110847129762016,10,0,,10,0,1,Singer/Rapper
+5,47,Wayne Newton,65,South,Singer/Rapper,Cheryl Burke,17.333333333333332,0.05197245440394856,3,1,3.0,3,1,0,Singer/Rapper
+5,48,Marie Osmond,47,West,Singer/Rapper,Jonathan Roberts,24.25,0.06728174935558154,10,0,,10,0,1,Singer/Rapper
+5,49,Mark Cuban,49,Northeast,TV Personality,Kym Johnson,20.4,0.0440831265287763,5,1,5.0,5,1,0,Tv Personality
+6,50,Cristian de la Fuente,34,Other,Actor/Actress,Cheryl Burke,24.75,0.04578281906169042,10,0,,10,0,1,Actor/Actress
+6,51,Steve Guttenberg,49,Northeast,Actor/Actress,Anna Trebunskaya,18.333333333333332,0.043416602356903596,3,1,3.0,3,1,0,Actor/Actress
+6,52,Priscilla Presley,62,Northeast,Actor/Actress,Louis van Amstel,22.8,0.05407158689798158,5,1,5.0,5,1,0,Actor/Actress
+6,53,Marlee Matlin,42,Midwest,Actor/Actress,Fabian Sanchez,22.333333333333332,0.04271146088508715,6,1,6.0,6,1,0,Actor/Actress
+6,54,Shannon Elizabeth,34,South,Actor/Actress,Derek Hough,24.214285714285715,0.03944863122170377,7,1,7.0,7,1,0,Actor/Actress
+6,55,Marissa Jaret Winokur,35,Northeast,Actor/Actress,Tony Dovolani,23.22222222222222,0.03912743552595028,9,1,9.0,9,1,0,Actor/Actress
+6,56,Jason Taylor,33,Northeast,Athlete,Edyta Sliwinska,26.15,0.04640590854387622,10,0,,10,0,1,Athlete
+6,57,Kristi Yamaguchi,36,West,Athlete,Mark Ballas,28.2,0.7041040172218341,10,0,,10,0,1,Athlete
+6,58,Monica Seles,34,Other,Athlete,Jonathan Roberts,15.0,0.0464242691468319,2,1,2.0,2,1,0,Athlete
+6,59,Penn Jillette,53,Northeast,Magician,Kym Johnson,16.5,0.0461432776916813,2,1,2.0,2,1,0,Other_Industry
+6,60,Adam Carolla,43,West,Radio Personality,Julianne Hough,18.5,0.03986834237328722,4,1,4.0,4,1,0,Other_Industry
+6,61,Mario,21,South,Singer/Rapper,Karina Smirnoff,25.25,0.05091253042489913,8,1,8.0,8,1,0,Singer/Rapper
+7,62,Ted McGinley,50,West,Actor/Actress,Inna Brayer,18.5,0.049721346786005,1,1,1.0,1,1,0,Actor/Actress
+7,63,Cloris Leachman,82,Midwest,Actor/Actress,Corky Ballas,17.5,0.040040599851349334,6,1,6.0,6,1,0,Actor/Actress
+7,64,Susan Lucci,61,Northeast,Actor/Actress,Tony Dovolani,21.928571428571427,0.03714950242314306,7,1,7.0,7,1,0,Actor/Actress
+7,65,Cody Linley,18,South,Actor/Actress,Julianne Hough,22.833333333333332,0.04192928320881389,9,1,9.0,9,1,0,Actor/Actress
+7,66,Misty May-Treanor,31,West,Athlete,Maksim Chmerkoskiy,21.0,0.06557656944768915,2,0,,2,0,1,Athlete
+7,67,Maurice Greene,34,Midwest,Athlete,Cheryl Burke,22.4375,0.038450424474186874,8,1,8.0,8,1,0,Athlete
+7,68,Warren Sapp,35,South,Athlete,Kym Johnson,24.25,0.052275812924109974,10,0,,10,0,1,Athlete
+7,69,Jeffrey Ross,43,Northeast,Comedian,Edyta Sliwinska,12.0,0.0492048771147531,1,1,1.0,1,1,0,Comedian
+7,70,Toni Braxton,40,South,Singer/Rapper,Alec Mazo,22.3,0.06324318051311172,5,1,5.0,5,1,0,Singer/Rapper
+7,71,Lance Bass,29,South,Singer/Rapper,Lacey Schwimmer,24.35,0.060482552104957274,10,0,,10,0,1,Singer/Rapper
+7,72,Kim Kardashian,27,West,TV Personality,Mark Ballas,17.75,0.04861306273128865,2,1,2.0,2,1,0,Tv Personality
+7,73,Rocco DiSpirito,41,Northeast,TV Personality,Karina Smirnoff,17.875,0.041680649603464674,4,1,4.0,4,1,0,Tv Personality
+7,74,Brooke Burke,37,Northeast,TV Personality,Derek Hough,26.95,0.6876915299728277,10,0,,10,0,1,Tv Personality
+8,75,Gilles Marini,33,Other,Actor/Actress,Cheryl Burke,27.681818181818183,0.6172410530412413,11,0,,11,0,1,Actor/Actress
+8,76,Denise Richards,38,Midwest,Actor/Actress,Maksim Chmerkoskiy,18.333333333333332,0.041827112126525505,3,1,3.0,3,1,0,Actor/Actress
+8,77,David Alan Grier,52,Midwest,Actor/Actress,Kym Johnson,20.8,0.040137222094527844,5,1,5.0,5,1,0,Actor/Actress
+8,78,Lawrence Taylor,50,South,Athlete,Edyta Sliwinska,19.714285714285715,0.038874509501229414,7,1,7.0,7,1,0,Athlete
+8,79,Ty Murray,39,West,Athlete,Chelsie Hightower,21.8,0.041299168079846696,10,1,10.0,10,1,0,Athlete
+8,80,Shawn Johnson,17,Midwest,Athlete,Mark Ballas,26.454545454545453,0.07270716034698753,11,0,,11,0,1,Athlete
+8,81,Steve Wozniak,58,West,Entrepreneur,Karina Smirnoff,13.0,0.04360419704726955,4,1,4.0,4,1,0,Other_Industry
+8,82,Belinda Carlisle,50,West,Singer/Rapper,Jonathan Roberts,17.5,0.04332314393329145,2,1,2.0,2,1,0,Singer/Rapper
+8,83,Chuck Wicks,29,South,Singer/Rapper,Julianne Hough,22.9375,0.04216406692976968,8,1,8.0,8,1,0,Singer/Rapper
+8,84,Lil' Kim,34,Northeast,Singer/Rapper,Derek Hough,25.555555555555557,0.04804112314995843,9,1,9.0,9,1,0,Singer/Rapper
+8,85,Steve-O,34,Other,TV Personality,Lacey Schwimmer,15.833333333333334,0.042467271893337634,6,1,6.0,6,1,0,Tv Personality
+8,86,Holly Madison,30,West,TV Personality,Dmitry Chaplin,17.25,0.0413866910608091,4,1,4.0,4,1,0,Tv Personality
+8,87,Melissa Rycroft,26,South,TV Personality,Tony Dovolani,26.681818181818183,0.08619934937486219,11,0,,11,0,1,Tv Personality
+9,88,Ashley Hamiliton,34,West,Actor/Actress,Edyta Sliwinska,18.9999,0.0441158548785252,1,1,1.0,1,1,0,Actor/Actress
+9,89,Debi Mazar,45,Northeast,Actor/Actress,Maksim Chmerkoskiy,20.0,0.038811528325630236,3,1,3.0,3,1,0,Actor/Actress
+9,90,Melissa Joan Hart,33,Northeast,Actor/Actress,Mark Ballas,22.833316666666665,0.03881339388853415,6,1,6.0,6,1,0,Actor/Actress
+9,91,Mark Dacascos,45,West,Actor/Actress,Lacey Schwimmer,24.214257142857143,0.04271733259822979,7,1,7.0,7,1,0,Actor/Actress
+9,92,Chuck Liddell,39,West,Athlete,Anna Trebunskaya,18.75,0.038403727892107095,4,1,4.0,4,1,0,Athlete
+9,93,Natalie Coughlin,27,West,Athlete,Alec Mazo,23.999959999999998,0.04426801560304,5,1,5.0,5,1,0,Athlete
+9,94,Louie Vito,21,Midwest,Athlete,Chelsie Hightower,21.333299999999998,0.03902636568806555,6,1,6.0,6,1,0,Athlete
+9,95,Michael Irvin,43,South,Athlete,Anna Demidova,19.357114285714285,0.04020295367303507,7,1,7.0,7,1,0,Athlete
+9,96,Joanna Krupa,30,Other,Model,Derek Hough,27.055533333333333,0.06882919210022356,9,1,9.0,9,1,0,Model
+9,97,Kathy Ireland,46,West,Model,Tony Dovolani,18.99995,0.041756260347385096,2,1,2.0,2,1,0,Model
+9,98,Tom DeLay,62,South,Politician,Cheryl Burke,17.666633333333333,0.040420461206864496,3,0,,3,0,1,Other_Industry
+9,99,Macy Gray,42,Midwest,Singer/Rapper,Jonathan Roberts,18.9999,0.0441158520025402,1,1,1.0,1,1,0,Singer/Rapper
+9,100,Aaron Carter,21,South,Singer/Rapper,Karina Smirnoff,25.812462500000002,0.09351839690328097,8,1,8.0,8,1,0,Singer/Rapper
+9,101,Mya,29,South,Singer/Rapper,Dmitry Chaplin,28.433299999999996,0.5752059510468799,10,0,,10,0,1,Singer/Rapper
+9,102,Donny Osmond,51,West,Singer/Rapper,Kym Johnson,26.46662,0.05865491283287155,10,0,,10,0,1,Singer/Rapper
+9,103,Kelly Osbourne,24,Other,TV Personality,Louis van Amstel,24.47216,0.046190570995882155,10,0,,10,0,1,Tv Personality
+10,104,Aiden Turner,32,Other,Actor/Actress,Edyta Sliwinska,17.625,0.041787120909540926,4,1,4.0,4,1,0,Actor/Actress
+10,105,Shannen Doherty,38,South,Actor/Actress,Mark Ballas,19.0,0.04297701678795015,2,1,2.0,2,1,0,Actor/Actress
+10,106,Niecy Nash,40,West,Actor/Actress,Louis van Amstel,20.999975,0.03935147699505756,8,1,8.0,8,1,0,Actor/Actress
+10,107,Buzz Aldrin,80,Northeast,Astronaut,Ashly DelGrosso,13.0,0.05132063871280337,3,1,3.0,3,1,0,Other_Industry
+10,108,Chad Ochocinco,32,South,Athlete,Cheryl Burke,22.166655555555554,0.03915681103270211,9,1,9.0,9,1,0,Athlete
+10,109,Evan Lysacek,24,Midwest,Athlete,Anna Trebunskaya,26.288869999999996,0.07408370237869799,10,0,,10,0,1,Athlete
+10,110,Pamela Anderson,42,Other,Model,Damian Whitewood,23.428542857142855,0.04477888205978851,7,1,7.0,7,1,0,Model
+10,111,Nicole Scherzinger,31,West,Singer/Rapper,Derek Hough,28.07776,0.6956730733619108,10,0,,10,0,1,Singer/Rapper
+10,112,Erin Andrews,32,Northeast,Sports Broadcaster,Maksim Chmerkoskiy,24.94998,0.04441255799292225,10,0,,10,0,1,Other_Industry
+10,113,Kate Gosselin,35,Northeast,TV Personality,Tony Dovolani,15.4,0.04210084318388682,5,1,5.0,5,1,0,Tv Personality
+10,114,Jake Pavelka,32,South,TV Personality,Chelsie Hightower,21.333316666666665,0.04334378728657995,6,1,6.0,6,1,0,Tv Personality
+11,115,David Hasselhoff,58,South,Actor/Actress,Kym Johnson,15.0,0.0535353233612313,1,1,1.0,1,1,0,Actor/Actress
+11,116,Florence Henderson,76,Midwest,Actor/Actress,Corky Ballas,19.1,0.04370218907341628,5,1,5.0,5,1,0,Actor/Actress
+11,117,Kyle Massey,19,South,Actor/Actress,Lacey Schwimmer,25.58331,0.06726630896216503,10,0,,10,0,1,Actor/Actress
+11,118,Jennifer Grey,50,Northeast,Actor/Actress,Derek Hough,27.9,0.5883195822924451,10,0,,10,0,1,Actor/Actress
+11,119,Rick Fox,41,Other,Athlete,Cheryl Burke,25.0,0.05976409551257176,7,1,7.0,7,1,0,Athlete
+11,120,Kurt Warner,39,Midwest,Athlete,Anna Trebunskaya,23.1249875,0.05267897698322317,8,1,8.0,8,1,0,Athlete
+11,121,Margaret Cho,41,West,Comedian,Louis van Amstel,17.0,0.04736558871020257,3,1,3.0,3,1,0,Comedian
+11,122,Michael Bolton,57,Northeast,Singer/Rapper,Chelsie Hightower,14.0,0.049584970418827604,2,1,2.0,2,1,0,Singer/Rapper
+11,123,Brandy,31,South,Singer/Rapper,Maksim Chmerkoskiy,27.6111,0.11634376768351494,9,1,9.0,9,1,0,Singer/Rapper
+11,124,The Situation,28,Northeast,TV Personality,Karina Smirnoff,16.75,0.04489474652837947,4,1,4.0,4,1,0,Tv Personality
+11,125,Audrina Patridge,25,West,TV Personality,Tony Dovolani,24.333299999999998,0.05836496864562667,6,1,6.0,6,1,0,Tv Personality
+11,126,Bristol Palin,19,West,TV Personality,Mark Ballas,22.91664,0.051418492016461995,10,0,,10,0,1,Tv Personality
+12,127,Ralph Macchio,49,Northeast,Actor/Actress,Karina Smirnoff,24.11111111111111,0.1390125629466697,9,1,9.0,9,1,0,Actor/Actress
+12,128,Chelsea Kane,22,West,Actor/Actress,Mark Ballas,26.76666,0.09247136009842052,10,0,,10,0,1,Actor/Actress
+12,129,Kirstie Alley,60,Midwest,Actor/Actress,Maksim Chmerkoskiy,24.64999,0.07039437909650362,10,0,,10,0,1,Actor/Actress
+12,130,Hines Ward,35,Other,Athlete,Kym Johnson,26.76666,0.5124314063920331,10,0,,10,0,1,Athlete
+12,131,Sugar Ray Leonard,54,South,Athlete,Anna Trebunskaya,18.75,0.04886113570778153,4,1,4.0,4,1,0,Athlete
+12,132,Chris Jericho,40,Northeast,Athlete,Cheryl Burke,22.333333333333332,0.06623774448458496,6,1,6.0,6,1,0,Athlete
+12,133,Petra Nemcova,31,Other,Model,Dmitry Chaplin,21.2,0.05893053821352902,5,1,5.0,5,1,0,Model
+12,134,Mike Catherwood,32,West,Radio Personality,Lacey Schwimmer,15.0,0.05073219533631005,2,1,2.0,2,1,0,Other_Industry
+12,135,Romeo,21,South,Singer/Rapper,Chelsie Hightower,24.375,0.06249379684427784,8,1,8.0,8,1,0,Singer/Rapper
+12,136,Wendy Williams,46,Northeast,TV Personality,Tony Dovolani,15.333333333333334,0.049056937599207595,3,1,3.0,3,1,0,Tv Personality
+12,137,Kendra Wilkinson,25,West,TV Personality,Louis van Amstel,22.214285714285715,0.05140088551137867,7,1,7.0,7,1,0,Tv Personality
+13,138,Elisabetta Canalis,33,Other,Actor/Actress,Valentin Chmerkovskiy,18.0,0.0455667909992531,2,1,2.0,2,1,0,Actor/Actress
+13,139,David Arquette,40,South,Actor/Actress,Kym Johnson,22.071428571428573,0.04637353448346092,7,1,7.0,7,1,0,Actor/Actress
+13,140,Ricki Lake,42,Northeast,Actor/Actress,Derek Hough,26.59998,0.2819073501041454,10,0,,10,0,1,Actor/Actress
+13,141,J.R. Martinez,28,South,Actor/Actress,Karina Smirnoff,26.31665,0.3868996481089345,10,0,,10,0,1,Actor/Actress
+13,142,Metta World Peace (Ron),31,Northeast,Athlete,Peta Murgatroyd,14.0,0.0526493781854349,1,1,1.0,1,1,0,Athlete
+13,143,Hope Solo,30,West,Athlete,Maksim Chmerkoskiy,23.055533333333333,0.056868078989449025,9,1,9.0,9,1,0,Athlete
+13,144,Chynna Phillips,43,West,Singer/Rapper,Tony Dovolani,22.5,0.13368077044446372,4,1,4.0,4,1,0,Singer/Rapper
+13,145,Kristin Cavallari,24,West,TV Personality,Mark Ballas,21.666666666666668,0.06176906286787473,3,1,3.0,3,1,0,Tv Personality
+13,146,Carson Kressley,41,Northeast,TV Personality,Anna Trebunskaya,19.4,0.04925990862339656,5,1,5.0,5,1,0,Tv Personality
+13,147,Chaz Bono,42,West,TV Personality,Lacey Schwimmer,18.833333333333332,0.050061576419784086,6,1,6.0,6,1,0,Tv Personality
+13,148,Nancy Grace,51,South,TV Personality,Tristan MacManus,21.125,0.04740362550269508,8,1,8.0,8,1,0,Tv Personality
+13,149,Rob Kardashian,24,West,TV Personality,Cheryl Burke,24.3833,0.06857913293572618,10,0,,10,0,1,Tv Personality
+14,150,William Levy,31,Other,Actor/Actress,Cheryl Burke,27.76666,0.07122181803614562,10,0,,10,0,1,Actor/Actress
+14,151,Jack Wagner,52,Midwest,Actor/Actress,Anna Trebunskaya,22.666666666666668,0.04934029281237077,3,1,3.0,3,1,0,Actor/Actress
+14,152,Sherri Sheperd,44,Midwest,Actor/Actress,Valentin Chmerkovskiy,22.75,0.04695665310422072,4,1,4.0,4,1,0,Actor/Actress
+14,153,Jaleel White,35,West,Actor/Actress,Kym Johnson,25.928542857142855,0.06979151647431343,7,1,7.0,7,1,0,Actor/Actress
+14,154,Roshon Fegan,20,West,Actor/Actress,Chelsie Hightower,25.999975,0.0490960273187937,8,1,8.0,8,1,0,Actor/Actress
+14,155,Melissa Gilbert,47,West,Actor/Actress,Maksim Chmerkoskiy,23.25,0.039179474964347163,8,1,8.0,8,1,0,Actor/Actress
+14,156,Martina Navratilova,55,Other,Athlete,Tony Dovolani,18.5,0.0471403907445645,2,1,2.0,2,1,0,Athlete
+14,157,Donald Driver,37,South,Athlete,Peta Murgatroyd,27.11665,0.06466472492045813,10,0,,10,0,1,Athlete
+14,158,Gavin DeGraw,35,Northeast,Singer/Rapper,Karina Smirnoff,21.4,0.040380484219753175,5,1,5.0,5,1,0,Singer/Rapper
+14,159,Gladys Knight,67,South,Singer/Rapper,Tristan MacManus,22.0,0.041606819488765066,6,1,6.0,6,1,0,Singer/Rapper
+14,160,Katherine Jenkins,31,Other,Singer/Rapper,Mark Ballas,28.54999,0.6014466791852914,10,0,,10,0,1,Singer/Rapper
+14,161,Maria Menounos,33,Northeast,TV Personality,Derek Hough,26.72221111111111,0.06113905940236042,9,1,9.0,9,1,0,Tv Personality
+15,162,Gilles Marini,36,Other,Actor/Actress,Peta Murgatroyd,29.1284375,0.3184798883457412,8,1,8.0,8,1,0,Actor/Actress
+15,163,Sabrina Bryan,28,West,Actor/Actress,Louis van Amstel,28.125,0.09277847744889582,6,1,6.0,6,1,0,Actor/Actress
+15,164,Kirstie Alley,61,Midwest,Actor/Actress,Maksim Chmerkoskiy,25.1562375,0.0551199444474334,8,1,8.0,8,1,0,Actor/Actress
+15,165,Kelly Monaco,36,Northeast,Actor/Actress,Valentin Chmerkovskiy,28.13052,0.08417502354055813,10,0,,10,0,1,Actor/Actress
+15,166,Apolo Anton Ohno,30,West,Athlete,Karina Smirnoff,28.4043,0.08129260381484399,9,1,9.0,9,1,0,Athlete
+15,167,Emmitt Smith,43,South,Athlete,Cheryl Burke,28.117255555555555,0.10593886017727702,9,1,9.0,9,1,0,Athlete
+15,168,Shawn Johnson,20,Midwest,Athlete,Derek Hough,29.35274,0.13732095420180507,10,0,,10,0,1,Athlete
+15,169,Pamela Anderson,45,Other,Model,Tristan MacManus,17.0,0.0489210835920052,1,1,1.0,1,1,0,Model
+15,170,Helio Castroneves,37,Other,Racing Driver,Chelsie Hightower,23.333333333333332,0.05223385710808093,3,1,3.0,3,1,0,Other_Industry
+15,171,Joey Fatone,35,Northeast,Singer/Rapper,Kym Johnson,21.5,0.046526553435371445,2,1,2.0,2,1,0,Singer/Rapper
+15,172,Drew Lachey,36,Midwest,Singer/Rapper,Anna Trebunskaya,22.666666666666668,0.05286451359922426,3,1,3.0,3,1,0,Singer/Rapper
+15,173,Bristol Palin,21,West,TV Personality,Mark Ballas,23.0,0.05046278375622097,4,1,4.0,4,1,0,Tv Personality
+15,174,Melissa Rycroft,29,South,TV Personality,Tony Dovolani,29.33607,0.1895367081998956,10,0,,10,0,1,Tv Personality
+16,175,Ingo Rademacher,41,Other,Actor/Actress,Kym Johnson,22.5,0.040513763984545925,9,1,9.0,9,1,0,Actor/Actress
+16,176,Zendaya,16,West,Actor/Actress,Valentin Chmerkovskiy,27.299979999999998,0.6580137604477645,10,0,,10,0,1,Actor/Actress
+16,177,Dorothy Hamill,56,Midwest,Athlete,Tristan MacManus,18.0,0.0668916069131555,2,0,,2,0,1,Athlete
+16,178,Victor Ortiz,26,Midwest,Athlete,Lindsay Arnold,19.666666666666668,0.03813752783653435,6,1,6.0,6,1,0,Athlete
+16,179,Alexandra Raisman,18,Northeast,Athlete,Mark Ballas,26.45,0.054984268587260424,10,1,10.0,10,1,0,Athlete
+16,180,Jacoby Jones,28,South,Athlete,Karina Smirnoff,25.19997,0.04924727921186748,10,0,,10,0,1,Athlete
+16,181,D. L. Hughley,50,South,Comedian,Cheryl Burke,16.6,0.0369505676390687,5,1,5.0,5,1,0,Comedian
+16,182,Andy Dick,47,South,Comedian,Sharna Burgess,18.928571428571427,0.036715929090617626,7,1,7.0,7,1,0,Comedian
+16,183,Wynonna Judd,48,South,Singer/Rapper,Tony Dovolani,17.0,0.0447104964761367,3,1,3.0,3,1,0,Singer/Rapper
+16,184,Kellie Pickler,26,South,Singer/Rapper,Derek Hough,26.75,0.06020043701030322,10,0,,10,0,1,Singer/Rapper
+16,185,Lisa Vanderpump,52,Other,TV Personality,Gleb Savchenko,18.75,0.041775777444787346,4,1,4.0,4,1,0,Tv Personality
+16,186,Sean Lowe,29,South,TV Personality,Peta Murgatroyd,21.5,0.03816391871054791,8,1,8.0,8,1,0,Tv Personality
+17,187,Valerie Harper,74,Northeast,Actor/Actress,Tristan MacManus,18.5,0.04853026317558445,4,1,4.0,4,1,0,Actor/Actress
+17,188,Brant Daugherty,28,Midwest,Actor/Actress,Peta Murgatroyd,25.8125,0.0548703397248213,8,1,8.0,8,1,0,Actor/Actress
+17,189,Elizabeth Berkley Lauren,39,Midwest,Actor/Actress,Valentin Chmerkovskiy,26.555533333333333,0.07414847206734257,9,1,9.0,9,1,0,Actor/Actress
+17,190,Leah Remini,43,Northeast,Actor/Actress,Tony Dovolani,25.699990000000003,0.0525856087547862,10,1,10.0,10,1,0,Actor/Actress
+17,191,Corbin Bleu,24,Northeast,Actor/Actress,Karina Smirnoff,28.51511818181818,0.17848226972261808,11,0,,11,0,1,Actor/Actress
+17,192,Amber Riley,27,West,Actor/Actress,Derek Hough,28.53028181818182,0.4613028988889902,11,0,,11,0,1,Actor/Actress
+17,193,Keyshawn Johnson,41,West,Athlete,Sharna Burgess,17.5,0.047846989152990904,2,1,2.0,2,1,0,Athlete
+17,194,Bill Engvall,56,South,Comedian,Emma Slater,23.409072727272726,0.05317340745870894,11,1,11.0,11,1,0,Comedian
+17,195,Christina Milian,31,Northeast,Singer/Rapper,Mark Ballas,25.0,0.061503724011832406,5,1,5.0,5,1,0,Singer/Rapper
+17,196,"Nicole ""Snooki"" Polizzi",25,Other,TV Personality,Sasha Farber,25.142857142857142,0.053357263781437125,7,1,7.0,7,1,0,Tv Personality
+17,197,Jack Osbourne,27,Other,TV Personality,Cheryl Burke,26.909063636363637,0.05758482668381053,11,0,,11,0,1,Tv Personality
+17,198,Bill Nye,57,South,TV Personality,Tyne Stecklein,15.666666666666666,0.04701100607151137,3,1,3.0,3,1,0,Tv Personality
+18,199,Billy Dee Williams,76,Northeast,Actor/Actress,Emma Slater,15.0,0.055815868367847146,2,0,,2,0,1,Actor/Actress
+18,200,Danica McKellar,39,West,Actor/Actress,Valentin Chmerkovskiy,33.125,0.06110752264441272,8,1,8.0,8,1,0,Actor/Actress
+18,201,James Maslow,23,Northeast,Actor/Actress,Peta Murgatroyd,33.0,0.05967236371126376,10,1,10.0,10,1,0,Actor/Actress
+18,202,Candace Cameron Bure,37,West,Actor/Actress,Mark Ballas,30.799979999999998,0.06176722330565515,10,0,,10,0,1,Actor/Actress
+18,203,Sean Avery,33,Other,Athlete,Karina Smirnoff,20.5,0.04634435919697705,2,1,2.0,2,1,0,Athlete
+18,204,Diana Nyad,64,Northeast,Athlete,Henry Byalikov,18.0,0.0539803942157071,1,0,,1,0,1,Athlete
+18,205,Charlie White,26,Midwest,Athlete,Sharna Burgess,34.166666666666664,0.23915902805202416,9,1,9.0,9,1,0,Athlete
+18,206,Amy Purdy,34,West,Athlete,Derek Hough,33.91666,0.07426963674170695,10,0,,10,0,1,Athlete
+18,207,Meryl Davis,27,Midwest,Athlete,Maksim Chmerkoskiy,34.8,0.42886980538885294,10,0,,10,0,1,Athlete
+18,208,Drew Carey,55,Midwest,Comedian,Cheryl Burke,27.5,0.048452272921022534,6,1,6.0,6,1,0,Comedian
+18,209,Cody Simpson,17,Other,Singer/Rapper,Witney Carson,28.8,0.048733836502324476,5,1,5.0,5,1,0,Singer/Rapper
+18,210,NeNe Leakes,46,Northeast,TV Personality,Tony Dovolani,29.571428571428573,0.0457478007883681,7,1,7.0,7,1,0,Tv Personality
+19,211,Antonio Sabato Jr.,42,Other,Actor/Actress,Cheryl Burke,28.5,0.04537585512842287,7,1,7.0,7,1,0,Actor/Actress
+19,212,Jonathan Bennett,33,Midwest,Actor/Actress,Allison Holker,28.666666666666668,0.0491064444529515,6,1,6.0,6,1,0,Actor/Actress
+19,213,Lea Thompson,53,Midwest,Actor/Actress,Artem Chigvintsev,33.888888888888886,0.08461388050026747,9,1,9.0,9,1,0,Actor/Actress
+19,214,Janel Parrish,25,West,Actor/Actress,Valentin Chmerkovskiy,36.1818,0.08276049588948312,11,0,,11,0,1,Actor/Actress
+19,215,Alfonso Ribeiro,42,Northeast,Actor/Actress,Witney Carson,36.72727272727273,0.49832063054128883,11,0,,11,0,1,Actor/Actress
+19,216,Lolo Jones,32,Midwest,Athlete,Keo Motsepe,22.0,0.0474484199954073,1,1,1.0,1,1,0,Athlete
+19,217,Randy Couture,51,West,Athlete,Karina Smirnoff,28.333333333333332,0.056387574688019665,3,1,3.0,3,1,0,Athlete
+19,218,Tommy Chong,76,Other,Comedian,Peta Murgatroyd,28.65,0.04761263098167417,10,1,10.0,10,1,0,Comedian
+19,219,Betsey Johnson,72,Northeast,Fashion Designer,Tony Dovolani,26.5,0.0440098157413079,4,1,4.0,4,1,0,Other_Industry
+19,220,Michael Waltrip,51,South,Racing Driver,Emma Slater,25.625,0.04528102416718077,8,1,8.0,8,1,0,Other_Industry
+19,221,Tavis Smiley,50,South,Radio Personality,Sharna Burgess,28.5,0.0512235184704072,2,1,2.0,2,1,0,Other_Industry
+19,222,Bethany Mota,18,West,Social Media Personality,Derek Hough,36.04545454545455,0.10707813862104638,11,1,11.0,11,1,0,Other_Industry
+19,223,Sadie Robertson,17,South,TV Personality,Mark Ballas,35.16665454545455,0.0657255963810198,11,0,,11,0,1,Tv Personality
+20,224,Suzanne Somers,68,West,Actor/Actress,Tony Dovolani,26.8,0.04364689694163668,5,1,5.0,5,1,0,Actor/Actress
+20,225,Willow Shields,14,West,Actor/Actress,Mark Ballas,33.92857142857143,0.0572037030431825,7,1,7.0,7,1,0,Actor/Actress
+20,226,Riker Lynch,23,West,Actor/Actress,Allison Holker,36.3,0.22411633800711622,10,0,,10,0,1,Actor/Actress
+20,227,Rumer Willis,26,South,Actor/Actress,Valentin Chmerkovskiy,36.25,0.2916017856392889,10,0,,10,0,1,Actor/Actress
+20,228,Nastia Liukin,25,Other,Athlete,Derek Hough,36.388888888888886,0.21748021699505238,9,1,9.0,9,1,0,Athlete
+20,229,Michael Sam,25,South,Athlete,Peta Murgatroyd,27.0,0.0452495521345593,4,1,4.0,4,1,0,Athlete
+20,230,Robert Herjavec,52,Other,Entrepreneur,Kym Johnson,29.8125,0.053103695100810186,8,1,8.0,8,1,0,Other_Industry
+20,231,Charlotte McKinney,21,South,Model,Keo Motsepe,23.333333333333332,0.045530694935559925,3,1,3.0,3,1,0,Model
+20,232,Noah Galloway,33,South,Motivational Speaker,Sharna Burgess,32.05,0.07621957910035183,10,0,,10,0,1,Other_Industry
+20,233,Redfoo,39,West,Singer/Rapper,Emma Slater,26.5,0.0414179351320734,2,1,2.0,2,1,0,Singer/Rapper
+20,234,Patti LaBelle,70,Northeast,Singer/Rapper,Artem Chigvintsev,27.666666666666668,0.044233059826654965,6,1,6.0,6,1,0,Singer/Rapper
+20,235,Chris Soules,33,Midwest,TV Personality,Witney Carson,28.375,0.05174831627387731,8,1,8.0,8,1,0,Tv Personality
+21,236,Gary Busey,71,South,Actor/Actress,Anna Trebunskaya,18.125,0.04818564482756005,4,1,4.0,4,1,0,Actor/Actress
+21,237,Alexa PenaVega,27,South,Actor/Actress,Mark Ballas,28.499977777777776,0.06967722998670497,9,1,9.0,9,1,0,Actor/Actress
+21,238,Carlos PenaVega,26,Midwest,Actor/Actress,Witney Carson,29.454527272727272,0.06628159032097122,11,1,11.0,11,1,0,Actor/Actress
+21,239,Victor Espinoza,43,Other,Athlete,Karina Smirnoff,16.75,0.046963829198215054,2,1,2.0,2,1,0,Athlete
+21,240,Alek Skarlatos,22,West,Military,Lindsay Arnold,26.727263636363638,0.05784980166438038,11,0,,11,0,1,Other_Industry
+21,241,Chaka Khan,62,Midwest,Singer/Rapper,Keo Motsepe,14.0,0.0472826757105557,2,1,2.0,2,1,0,Singer/Rapper
+21,242,Andy Grammer,31,West,Singer/Rapper,Allison Holker,27.874975,0.05457609188235806,8,1,8.0,8,1,0,Singer/Rapper
+21,243,Tamar Braxton,38,South,Singer/Rapper,Valentin Chmerkovskiy,28.444444444444443,0.09949553045827121,9,0,,9,0,1,Singer/Rapper
+21,244,Nick Carter,35,Northeast,Singer/Rapper,Sharna Burgess,29.818181818181817,0.1513740767162852,11,0,,11,0,1,Singer/Rapper
+21,245,Hayes Grier,15,South,Social Media Personality,Emma Slater,27.214285714285715,0.055105994194013096,7,1,7.0,7,1,0,Other_Industry
+21,246,Bindi Irwin,17,Other,TV Personality,Derek Hough,30.318181818181817,0.4429261614950036,11,0,,11,0,1,Tv Personality
+21,247,Kim Zolciak-Biermann,37,South,TV Personality,Tony Dovolani,15.25,0.0474212609608157,2,0,,2,0,1,Tv Personality
+21,248,Paula Deen,68,South,TV Personality,Louis van Amstel,20.25,0.04604473639429953,6,1,6.0,6,1,0,Tv Personality
+22,249,Mischa Barton,30,Other,Actor/Actress,Artem Chigvintsev,16.333333333333332,0.0467744937658529,3,1,3.0,3,1,0,Actor/Actress
+22,250,Kim Fields,46,Northeast,Actor/Actress,Sasha Farber,24.428571428571427,0.04710435121469674,7,1,7.0,7,1,0,Actor/Actress
+22,251,Jodie Sweetin,34,West,Actor/Actress,Keo Motsepe,25.8125,0.05481714409703724,8,1,8.0,8,1,0,Actor/Actress
+22,252,Doug Flutie,53,South,Athlete,Karina Smirnoff,21.333333333333332,0.0453307016265749,6,1,6.0,6,1,0,Athlete
+22,253,Von Miller,27,South,Athlete,Witney Carson,24.571428571428573,0.04965854872243212,7,1,7.0,7,1,0,Athlete
+22,254,Antonio Brown,27,South,Athlete,Sharna Burgess,25.38888888888889,0.05646423056126962,9,1,9.0,9,1,0,Athlete
+22,255,Paige VanZant,22,West,Athlete,Mark Ballas,27.76666,0.13516888980230787,10,0,,10,0,1,Athlete
+22,256,Geraldo Rivera,72,Northeast,Journalist,Edyta Sliwinska,13.0,0.048874814253082696,2,1,2.0,2,1,0,Other_Industry
+22,257,Nyle DiMarco,26,Northeast,Model,Peta Murgatroyd,27.84998,0.20515899349133643,10,0,,10,0,1,Model
+22,258,Ginger Zee,35,West,News Anchor,Valentin Chmerkovskiy,27.083319999999997,0.10496647499070125,10,0,,10,0,1,Other_Industry
+22,259,Wanya Morris,42,Northeast,Singer/Rapper,Lindsay Arnold,27.5,0.35491005624710503,9,1,9.0,9,1,0,Singer/Rapper
+22,260,Marla Maples,52,South,TV Personality,Tony Dovolani,22.5,0.0546882659954488,4,1,4.0,4,1,0,Tv Personality
+23,261,Jake T. Austin,21,Northeast,Actor/Actress,Jenna Johnson,23.0,0.04239770606209635,2,1,2.0,2,1,0,Actor/Actress
+23,262,Maureen McCormick,60,West,Actor/Actress,Artem Chigvintsev,26.857142857142858,0.03835762639916263,7,1,7.0,7,1,0,Actor/Actress
+23,263,Marilu Henner,64,Midwest,Actor/Actress,Derek Hough,28.333333333333332,0.04552101035308298,9,1,9.0,9,1,0,Actor/Actress
+23,264,Ryan Lochte,32,Northeast,Athlete,Cheryl Burke,26.0,0.03808326920210084,8,1,8.0,8,1,0,Athlete
+23,265,Calvin Johnson Jr.,30,South,Athlete,Lindsay Arnold,30.939372727272726,0.0501460450042679,11,0,,11,0,1,Athlete
+23,266,Laurie Hernandez,16,Northeast,Athlete,Valentin Chmerkovskiy,32.98483636363637,0.5080736753167491,11,0,,11,0,1,Athlete
+23,267,Amber Rose,32,Northeast,Model,Maksim Chmerkoskiy,24.833333333333332,0.0383664605429099,6,1,6.0,6,1,0,Model
+23,268,Rick Perry,66,South,Politician,Emma Slater,21.666666666666668,0.04118723513329723,3,1,3.0,3,1,0,Other_Industry
+23,269,James Hinchcliffe,29,Other,Racing Driver,Sharna Burgess,32.772690909090905,0.19214484413221938,11,0,,11,0,1,Other_Industry
+23,270,Babyface,57,Midwest,Singer/Rapper,Allison Holker,24.75,0.04371512722454325,4,1,4.0,4,1,0,Singer/Rapper
+23,271,Vanilla Ice,48,South,Singer/Rapper,Witney Carson,24.25,0.03897769622744743,4,1,4.0,4,1,0,Singer/Rapper
+23,272,Jana Kramer,32,Midwest,Singer/Rapper,Gleb Savchenko,30.90909090909091,0.04932474061419436,11,1,11.0,11,1,0,Singer/Rapper
+23,273,Terra Jole,36,South,TV Personality,Sasha Farber,29.45,0.04512318380800594,10,1,10.0,10,1,0,Tv Personality
+24,274,Charo,66,Other,Actor/Actress,Keo Motsepe,23.333333333333332,0.04730190351523473,3,1,3.0,3,1,0,Actor/Actress
+24,275,Mr. T,64,Midwest,Actor/Actress,Kym Herjavec,23.5,0.0449397810781558,4,1,4.0,4,1,0,Actor/Actress
+24,276,Heather Morris,30,West,Actor/Actress,Maksim Chmerkoskiy,32.833333333333336,0.067857652478995,6,1,6.0,6,1,0,Actor/Actress
+24,277,Nancy Kerrigan,47,Northeast,Athlete,Artem Chigvintsev,32.5,0.059526924906542614,7,1,7.0,7,1,0,Athlete
+24,278,Bonner Bolton,29,South,Athlete,Sharna Burgess,28.4375,0.050956137504309926,8,1,8.0,8,1,0,Athlete
+24,279,Simone Biles,20,Midwest,Athlete,Sasha Farber,35.166666666666664,0.24986086491654985,9,1,9.0,9,1,0,Athlete
+24,280,David Ross,40,South,Athlete,Lindsay Arnold,31.28333,0.0883527924175606,10,0,,10,0,1,Athlete
+24,281,Rashad Jennings,32,South,Athlete,Emma Slater,35.16666,0.2640419559465379,10,0,,10,0,1,Athlete
+24,282,Chris Kattan,46,West,Comedian,Witney Carson,19.5,0.04744380651978295,2,1,2.0,2,1,0,Comedian
+24,283,Erika Jayne,45,South,Singer/Rapper,Gleb Savchenko,28.0,0.04648416883485522,5,1,5.0,5,1,0,Singer/Rapper
+24,284,Normani,20,South,Singer/Rapper,Valentin Chmerkovskiy,35.883320000000005,0.19988539108987474,10,0,,10,0,1,Singer/Rapper
+24,285,Nick Viall,36,Midwest,TV Personality,Peta Murgatroyd,29.071428571428573,0.04971343426927129,7,1,7.0,7,1,0,Tv Personality
+25,286,Sasha Pieterse,21,Other,Actor/Actress,Gleb Savchenko,21.5,0.0414608693228136,5,1,5.0,5,1,0,Actor/Actress
+25,287,Frankie Muniz,31,Northeast,Actor/Actress,Witney Carson,26.888869999999997,0.050331389674278915,10,0,,10,0,1,Actor/Actress
+25,288,Jordan Fisher,23,South,Actor/Actress,Lindsay Arnold,29.5,0.5745965874498162,10,0,,10,0,1,Actor/Actress
+25,289,Derek Fisher,43,South,Athlete,Sharna Burgess,20.25,0.0427132563254722,4,1,4.0,4,1,0,Athlete
+25,290,Nikki Bella,33,West,Athlete,Artem Chigvintsev,24.5,0.043272398419474244,7,1,7.0,7,1,0,Athlete
+25,291,Terrell Owens,43,South,Athlete,Cheryl Burke,23.9375,0.03857456540692335,8,1,8.0,8,1,0,Athlete
+25,292,Victoria Arlen,22,International,Athlete,Valentin Chmerkovskiy,25.38888888888889,0.04182146889046344,9,1,9.0,9,1,0,Athlete
+25,293,Barbara Corcoran,68,Northeast,Entrepreneur,Keo Motsepe,15.5,0.04490013178242235,2,1,2.0,2,1,0,Other_Industry
+25,294,Lindsey Stirling,31,West,Musician,Mark Ballas,28.65,0.11161977743127263,10,0,,10,0,1,Other_Industry
+25,295,Debbie Gibson,47,Northeast,Singer/Rapper,Alan Bersten,18.75,0.04624373040936225,2,1,2.0,2,1,0,Singer/Rapper
+25,296,Nick Lachey,43,South,Singer/Rapper,Peta Murgatroyd,21.333333333333332,0.04047110711262953,6,1,6.0,6,1,0,Singer/Rapper
+25,297,Drew Scott,39,Other,TV Personality,Emma Slater,25.2,0.04255716874220765,10,1,10.0,10,1,0,Tv Personality
+25,298,Vanessa Lachey,36,Other,TV Personality,Maksim Chmerkoskiy,25.5,0.059683213691866084,7,1,7.0,7,1,0,Tv Personality
+26,299,Jamie Anderson,27,West,Athlete,Artem Chigvintsev,19.0,0.0577687978909137,1,1,1.0,1,1,0,Athlete
+26,300,Johnny Damon,44,Midwest,Athlete,Emma Slater,18.0,0.0615117020849986,1,1,1.0,1,1,0,Athlete
+26,301,Kareem Abdul-Jabbar,71,Northeast,Athlete,Lindsay Arnold,23.25,0.060107991231507604,2,1,2.0,2,1,0,Athlete
+26,302,Arike Ogunbowale,21,Midwest,Athlete,Gleb Savchenko,27.5,0.061738805643858,2,1,2.0,2,1,0,Athlete
+26,303,Jennie Finch Daigle,37,West,Athlete,Keo Motsepe,27.166666666666668,0.0656064083935329,3,1,3.0,3,1,0,Athlete
+26,304,Chris Mazdzer,29,Northeast,Athlete,Witney Carson,29.0,0.06368702146542303,3,1,3.0,3,1,0,Athlete
+26,305,Mirai Nagasu,25,West,Athlete,Alan Bersten,31.666666666666668,0.1376071668291924,3,1,3.0,3,1,0,Athlete
+26,306,Tonya Harding,47,West,Athlete,Sasha Farber,29.75,0.08773926153358415,4,0,,4,0,1,Athlete
+26,307,Josh Norman,30,South,Athlete,Sharna Burgess,30.5,0.10583848668762147,4,0,,4,0,1,Athlete
+26,308,Adam Rippon,28,Northeast,Athlete,Jenna Johnson,32.75,0.515503280831022,4,0,,4,0,1,Athlete
+27,309,Juan Pablo Di Pace,39,Other,Actor/Actress,Cheryl Burke,27.375,0.3088114190520692,8,1,8.0,8,1,0,Actor/Actress
+27,310,Evanna Lynch,27,Other,Actor/Actress,Keo Motsepe,26.055555555555557,0.09296451951292911,9,0,,9,0,1,Actor/Actress
+27,311,Nancy McKeon,52,Northeast,Actor/Actress,Valentin Chmerkovskiy,20.666666666666668,0.047467214720747,3,1,3.0,3,1,0,Actor/Actress
+27,312,John Schneider,58,Northeast,Actor/Actress,Emma Slater,21.642857142857142,0.05163219305758944,7,1,7.0,7,1,0,Actor/Actress
+27,313,Milo Manheim,17,West,Actor/Actress,Witney Carson,27.27777777777778,0.1492698765001215,9,0,,9,0,1,Actor/Actress
+27,314,Danelle Umstead,46,West,Athlete,Artem Chigvintsev,18.25,0.04833519456695805,2,1,2.0,2,1,0,Athlete
+27,315,Mary Lou Retton,50,South,Athlete,Sasha Farber,23.666666666666668,0.057106961933476086,6,1,6.0,6,1,0,Athlete
+27,316,DeMarcus Ware,36,South,Athlete,Lindsay Arnold,24.714285714285715,0.0873337618399179,7,1,7.0,7,1,0,Athlete
+27,317,Nikki Glaser,34,Midwest,Comedian,Gleb Savchenko,17.5,0.0446814013239568,1,1,1.0,1,1,0,Comedian
+27,318,Bobby Bones,38,South,Radio Personality,Sharna Burgess,22.38888888888889,0.07867208943254914,9,0,,9,0,1,Other_Industry
+27,319,Tinashe,25,South,Singer/Rapper,Brandon Armstrong,25.5,0.16406249728112635,4,1,4.0,4,1,0,Singer/Rapper
+27,320,Alexis Ren,21,West,Social Media Personality,Alan Bersten,26.5,0.10205436452175194,9,0,,9,0,1,Other_Industry
+27,321,Joe Amabile,32,Midwest,TV Personality,Jenna Johnson,18.75,0.05843176478115631,8,1,8.0,8,1,0,Tv Personality
+28,322,Kate Flannery,55,Northeast,Actor/Actress,Pasha Pashkov,23.374975,0.021794552887596748,8,1,8.0,8,1,0,Actor/Actress
+28,323,James Van Der Beek,42,Northeast,Actor/Actress,Emma Slater,26.549979999999998,0.33821418670134973,10,1,10.0,10,1,0,Actor/Actress
+28,324,Kel Mitchell,41,Midwest,Actor/Actress,Witney Carson,26.409072727272726,0.08769551135073256,11,0,,11,0,1,Actor/Actress
+28,325,Ray Lewis,44,South,Athlete,Cheryl Burke,15.0,0.0072245502200753,2,0,,2,0,1,Athlete
+28,326,Lamar Odom,39,Northeast,Athlete,Peta Murgatroyd,13.75,0.00300635813920725,4,1,4.0,4,1,0,Athlete
+28,327,Sailor Brinkley-Cook,21,Northeast,Model,Valentin Chmerkovskiy,23.5,0.09392620764544539,6,1,6.0,6,1,0,Model
+28,328,Sean Spicer,48,Northeast,Politician,Lindsay Arnold,18.88888888888889,0.011713633280182387,9,1,9.0,9,1,0,Other_Industry
+28,329,Mary Wilson,75,West,Singer/Rapper,Brandon Armstrong,16.0,0.01838004948526465,2,1,2.0,2,1,0,Singer/Rapper
+28,330,Lauren Alaina,24,South,Singer/Rapper,Gleb Savchenko,25.5,0.08111368498057946,11,0,,11,0,1,Singer/Rapper
+28,331,Ally Brooke,26,South,Singer/Rapper,Sasha Farber,27.318181818181817,0.17123290417691203,11,0,,11,0,1,Singer/Rapper
+28,332,Karamo Brown,38,South,TV Personality,Jenna Johnson,21.5,0.03592020725895956,7,1,7.0,7,1,0,Tv Personality
+28,333,Hannah Brown,24,South,TV Personality,Alan Bersten,26.77270909090909,0.24721659782915645,11,0,,11,0,1,Tv Personality
+29,334,Anne Heche,51,Midwest,Actor/Actress,Keo Motsepe,18.0,0.002674980388359125,4,1,4.0,4,1,0,Actor/Actress
+29,335,Jesse Metcalfe,41,West,Actor/Actress,Sharna Burgess,19.6,0.03794793968162616,5,1,5.0,5,1,0,Actor/Actress
+29,336,Chrishell Stause,39,South,Actor/Actress,Gleb Savchenko,21.375,0.004486302000041375,8,1,8.0,8,1,0,Actor/Actress
+29,337,Skai Jackson,18,Northeast,Actor/Actress,Alan Bersten,23.54996,0.08839544978257206,10,1,10.0,10,1,0,Actor/Actress
+29,338,Justina Machado,48,Midwest,Actor/Actress,Sasha Farber,25.090872727272725,0.1833628083006137,11,0,,11,0,1,Actor/Actress
+29,339,Charles Oakley,56,Midwest,Athlete,Emma Slater,13.5,0.00047544037005245,2,1,2.0,2,1,0,Athlete
+29,340,Veron Davis,36,South,Athlete,Peta Murgatroyd,20.166666666666668,0.004751892401031633,6,1,6.0,6,1,0,Athlete
+29,341,Johnny Weir,36,Northeast,Athlete,Britt Stewart,25.05,0.09679940647976189,10,1,10.0,10,1,0,Athlete
+29,342,Nev Schulman,35,Northeast,Producer,Jenna Johnson,26.363618181818183,0.2845494736399204,11,0,,11,0,1,Other_Industry
+29,343,AJ McLean,42,South,Singer/Rapper,Cheryl Burke,23.444422222222222,0.033533434387530744,9,1,9.0,9,1,0,Singer/Rapper
+29,344,Nelly,45,South,Singer/Rapper,Daniella Karagach,22.954545454545453,0.029293384705520686,11,0,,11,0,1,Singer/Rapper
+29,345,Kaitlyn Bristowe,35,Other,TV Personality,Artem Chigvintsev,26.0,0.25596622170786043,11,0,,11,0,1,Tv Personality
+29,346,Carole Baskin,59,South,TV Personality,Pasha Pashkov,13.0,0.0005143259634136666,3,1,3.0,3,1,0,Tv Personality
+29,347,Monica Aldama,48,South,TV Personality,Valentin Chmerkovskiy,22.142857142857142,0.032066958183442275,7,1,7.0,7,1,0,Tv Personality
+29,348,Jeannie Mai,41,West,TV Personality,Brandon Armstrong,21.857142857142858,0.009936542816183199,7,0,,7,0,1,Tv Personality
+30,349,Martin Kove,75,Northeast,Actor/Actress,Britt Stewart,14.0,0.0003589961505665,2,1,2.0,2,1,0,Actor/Actress
+30,350,Brian Austin Green,48,West,Actor/Actress,Sharna Burgess,23.0,0.003112888322777025,4,1,4.0,4,1,0,Actor/Actress
+30,351,Melora Hardin,54,South,Actor/Actress,Artem Chigvintsev,33.166666666666664,0.12160292604325641,9,1,9.0,9,1,0,Actor/Actress
+30,352,Matt James,29,South,Athlete,Lindsay Arnold,23.625,0.00161620737531845,4,1,4.0,4,1,0,Athlete
+30,353,"Mike ""The Miz"" Mizanin",40,Midwest,Athlete,Witney Carson,28.928571428571427,0.018962362653085558,7,1,7.0,7,1,0,Athlete
+30,354,Suni Lee,18,Midwest,Athlete,Sasha Farber,32.94444444444444,0.04969743142528979,9,1,9.0,9,1,0,Athlete
+30,355,Iman Shumpert,31,Midwest,Athlete,Daniella Karagach,31.1,0.03396041359128009,10,0,,10,0,1,Athlete
+30,356,Cody Rigsby,34,West,Fitness Instructor,Cheryl Burke,31.05,0.046960274145646755,10,0,,10,0,1,Other_Industry
+30,357,Melanie C,47,Other,Singer/Rapper,Gleb Savchenko,29.6,0.0867093519792276,5,1,5.0,5,1,0,Singer/Rapper
+30,358,Jimmie Allen,36,South,Singer/Rapper,Emma Slater,30.4375,0.046514366650923275,8,1,8.0,8,1,0,Singer/Rapper
+30,359,Olivia Jade,21,West,Social Media Personality,Valentin Chmerkovskiy,32.625,0.04406197857652309,8,1,8.0,8,1,0,Other_Industry
+30,360,JoJo Siwa,18,Midwest,Social Media Personality,Jenna Johnson,35.9,0.40343264843320376,10,0,,10,0,1,Other_Industry
+30,361,Christine Chiu,38,Other,TV Personality,Pasha Pashkov,23.333333333333332,0.0081229122350057,3,1,3.0,3,1,0,Tv Personality
+30,362,Kenya Moore,50,Midwest,TV Personality,Brandon Armstrong,28.083333333333332,0.019343522391710534,6,1,6.0,6,1,0,Tv Personality
+30,363,Amanda Kloots,39,Midwest,TV Personality,Alan Bersten,34.95,0.21638051146456708,10,0,,10,0,1,Tv Personality
+31,364,Jason Lewis,51,West,Actor/Actress,Peta Murgatroyd,18.0,0.0003589179989818,1,1,1.0,1,1,0,Actor/Actress
+31,365,Cheryl Ladd,71,Midwest,Actor/Actress,Louis van Amstel,22.0,0.0014067176615604332,3,1,3.0,3,1,0,Actor/Actress
+31,366,Selma Blair,50,Midwest,Actor/Actress,Sasha Farber,31.2,0.03563056811600416,5,0,,5,0,1,Actor/Actress
+31,367,Joseph Baena,24,West,Actor/Actress,Daniella Karagach,27.8,0.006647558549172079,5,1,5.0,5,1,0,Actor/Actress
+31,368,Trevor Donovan,39,West,Actor/Actress,Emma Slater,31.833333333333332,0.019479549713417463,9,1,9.0,9,1,0,Actor/Actress
+31,369,Daniel Durant,32,Midwest,Actor/Actress,Britt Stewart,32.611111111111114,0.03002306493949816,9,1,9.0,9,1,0,Actor/Actress
+31,370,Wayne Brady,50,South,Comedian,Witney Carson,36.25,0.21445442559173014,10,0,,10,0,1,Comedian
+31,371,Sam Champion,61,South,News Anchor,Cheryl Burke,24.0,0.001972894602666375,4,1,4.0,4,1,0,Other_Industry
+31,372,Jessie James Decker,34,Other,Singer/Rapper,Alan Bersten,28.333333333333332,0.003368184716716733,6,1,6.0,6,1,0,Singer/Rapper
+31,373,Jordin Sparks,32,West,Singer/Rapper,Brandon Armstrong,31.428571428571427,0.021086649771852272,7,1,7.0,7,1,0,Singer/Rapper
+31,374,Heidi D'Amelio,50,South,Social Media Personality,Artem Chigvintsev,32.875,0.03363024782354002,8,1,8.0,8,1,0,Other_Industry
+31,375,Charli D'Amelio,18,Northeast,Social Media Personality,Mark Ballas,37.9,0.40336038994273304,10,0,,10,0,1,Other_Industry
+31,376,Teresa Giudice,50,Northeast,TV Personality,Pasha Pashkov,21.5,0.00047537594496245,2,1,2.0,2,1,0,Tv Personality
+31,377,Vinny Guadagnino,34,Northeast,TV Personality,Koko Iwasaki,26.9375,0.003599978521596,8,1,8.0,8,1,0,Tv Personality
+31,378,Shangela,40,South,TV Personality,Gleb Savchenko,34.55,0.09000186840545508,10,0,,10,0,1,Tv Personality
+31,379,Gabby Windey,31,Midwest,TV Personality,Valentin Chmerkovskiy,36.25,0.1785840126650084,10,0,,10,0,1,Tv Personality
+32,380,Jamie Lynn Spears,32,South,Actor/Actress,Alan Bersten,15.5,0.00267591028683725,2,1,2.0,2,1,0,Actor/Actress
+32,381,Mira Sorvino,55,Northeast,Actor/Actress,Gleb Savchenko,20.8,0.02574502523616056,5,1,5.0,5,1,0,Actor/Actress
+32,382,Barry Williams,68,West,Actor/Actress,Peta Murgatroyd,24.6875,0.02256567625367665,8,1,8.0,8,1,0,Actor/Actress
+32,383,Alyson Hannigan,49,South,Actor/Actress,Sasha Farber,25.545454545454547,0.03568448472917216,11,0,,11,0,1,Actor/Actress
+32,384,Xochitl Gomez,17,West,Actor/Actress,Valentin Chmerkovskiy,31.727272727272727,0.28021441147955684,11,0,,11,0,1,Actor/Actress
+32,385,Adrian Peterson,38,South,Athlete,Britt Stewart,19.0,0.018561752145213852,4,1,4.0,4,1,0,Athlete
+32,386,Matt Walsh,58,Midwest,Comedian,Koko Iwasaki,12.0,0.0009762031657503,1,1,1.0,1,1,0,Comedian
+32,387,Tyson Beckford,52,Northeast,Model,Jenna Johnson,16.666666666666668,0.0012715175529488668,3,1,3.0,3,1,0,Model
+32,388,Jason Mraz,46,South,Singer/Rapper,Daniella Karagach,30.863636363636363,0.2704603979431154,11,0,,11,0,1,Singer/Rapper
+32,389,Lele Pons,27,Other,Social Media Personality,Brandon Armstrong,26.642857142857142,0.05251718692451458,7,1,7.0,7,1,0,Other_Industry
+32,390,Harry Jowsey,26,Other,TV Personality,Rylee Arnold,23.22222222222222,0.011493176359540811,9,1,9.0,9,1,0,Tv Personality
+32,391,Mauricio Umansky,53,Other,TV Personality,Emma Slater,21.0,0.009365741476798433,6,1,6.0,6,1,0,Tv Personality
+32,392,Charity Lawson,27,South,TV Personality,Artem Chigvintsev,30.636363636363637,0.1561620684689915,11,0,,11,0,1,Tv Personality
+32,393,Ariana Madix,38,South,TV Personality,Pasha Pashkov,30.863636363636363,0.173761049583018,11,0,,11,0,1,Tv Personality
+33,394,Tori Spelling,51,West,Actor/Actress,Pasha Pashkov,18.0,0.00181597447936075,2,1,2.0,2,1,0,Actor/Actress
+33,395,Eric Roberts,68,West,Actor/Actress,Britt Stewart,17.666666666666668,0.004194420417123867,3,1,3.0,3,1,0,Actor/Actress
+33,396,Reginald VelJohnson,74,Northeast,Actor/Actress,Emma Slater,17.333333333333332,0.0028833754241215,3,1,3.0,3,1,0,Actor/Actress
+33,397,Chandler Kinney,24,West,Actor/Actress,Brandon Armstrong,29.055555555555557,0.3786123212311551,9,0,,9,0,1,Actor/Actress
+33,398,Dwight Howard ,38,South,Athlete,Daniella Karagach,25.428571428571427,0.09926282348659891,7,1,7.0,7,1,0,Athlete
+33,399,Danny Amendola,39,South,Athlete,Witney Carson,26.77777777777778,0.09838817476567771,9,0,,9,0,1,Athlete
+33,400,Stephen Nedoroscik,26,South,Athlete,Rylee Arnold,26.88888888888889,0.10668608947897944,9,0,,9,0,1,Athlete
+33,401,Ilona Maher,28,West,Athlete,Alan Bersten,25.77777777777778,0.047431801272465456,9,0,,9,0,1,Athlete
+33,402,Anna Delvey,33,Other,Con artist,Ezra Sosa,17.5,0.0072774011772557,2,1,2.0,2,1,0,Other_Industry
+33,403,Brooks Nader,27,Northeast,Model,Gleb Savchenko,25.125,0.00512797172169905,4,1,4.0,4,1,0,Model
+33,404,Phaedra Parks,51,South,TV Personality,Val Chmerkovskiy,24.8,0.0232799999204151,5,1,5.0,5,1,0,Tv Personality
+33,405,Jenn Tran,26,South,TV Personality,Sasha Farber,26.25,0.0434968676229007,6,1,6.0,6,1,0,Tv Personality
+33,406,Joey Graziadei,29,South,TV Personality,Jenna Johnson,28.666666666666668,0.24308683597733996,9,0,,9,0,1,Tv Personality
+34,407,Corey Feldman,54,West,Actor/Actress,Jenna Johnson,12.0,0.0007841501579432,2,1,2.0,2,1,0,Actor/Actress
+34,408,Danielle Fishel,44,West,Actor/Actress,Pasha Pashkov,26.25,0.02161208119815136,8,1,8.0,8,1,0,Actor/Actress
+34,409,Elaine Hendrix,55,South,Actor/Actress,Alan Bersten (Rashad Jennings week 9),27.909072727272726,0.03360994312221725,11,0,,11,0,1,Actor/Actress
+34,410,Baron Davis,46,West,Athlete,Britt Stewart,14.0,0.00409471156071665,2,1,2.0,2,1,0,Athlete
+34,411,Jordan Chiles,24,South,Athlete,Ezra Sosa (Apolo Anton Ohno week 9),29.5606,0.08424035892226643,11,0,,11,0,1,Athlete
+34,412,Andy Richter,59,West,Comedian,Emma Slater/Kaitlyn Bristowe (week 9),22.666666666666668,0.006404309443221322,9,1,9.0,9,1,0,Comedian
+34,413,Robert Irwin,22,Other,Conservationist,Witney Carson (Xoshitl Gomez week 9),30.196963636363638,0.2041264466724794,11,0,,11,0,1,Other_Industry
+34,414,Hilaria Baldwin,41,Northeast,Entrepreneur,Gleb Savchenko,20.0,0.10938345411966528,4,1,4.0,4,1,0,Other_Industry
+34,415,Lauren Jauregui,29,South,Singer/Rapper,Brandon Armstrong,17.333333333333332,0.060991522438248034,3,1,3.0,3,1,0,Singer/Rapper
+34,416,Scott Hoying,34,West,Singer/Rapper,Rylee Arnold,21.5,0.036306328972243763,6,1,6.0,6,1,0,Singer/Rapper
+34,417,Alix Earle,24,South,Social media personality,Val Chmerkovskiy (Joey Graziadei week 9),30.136363636363637,0.2165597544368917,11,0,,11,0,1,Other_Industry
+34,418,Jen Affleck,26,West,TV Personality,Jan Ravnik,24.428571428571427,0.013539095397883357,7,1,7.0,7,1,0,Tv Personality
+34,419,Whitney Leavitt,32,West,TV Personality,Mark Ballas,31.05,0.3142088949532308,10,1,10.0,10,1,0,Tv Personality
+34,420,Dylan Efron,33,West,TV Personality,Daniella Karagach (Rumer Willis week 9),28.98483636363636,0.06914512112288292,11,0,,11,0,1,Tv Personality

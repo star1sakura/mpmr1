@@ -1,0 +1,16 @@
+term,coef
+const,-1.4596181637005414
+mean_J,0.5859872593191635
+mean_p,1.3645036427201247
+age,-0.29318216287477994
+region_Midwest,0.0
+region_Northeast,0.0549770582581147
+region_Other,-0.37008941796931794
+region_South,0.7189373725645974
+region_West,0.16635764062501673
+industry_consolidated_Athlete,0.4104573310982581
+industry_consolidated_Comedian,-0.7858228825924385
+industry_consolidated_Model,-1.1712899234535248
+industry_consolidated_Other_Industry,0.8229849463389012
+industry_consolidated_Singer/Rapper,-0.021691773188402264
+industry_consolidated_Tv Personality,0.37657717436831845
