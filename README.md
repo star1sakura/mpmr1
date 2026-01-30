@@ -1,18 +1,21 @@
 # 项目说明（面向使用者）
 
-本项目用于 2026 MCM Problem C 的**要求一**：在已知评审分数与淘汰结果的情况下，估计每位选手每周的粉丝投票份额与等效票数，并输出后续题目（2–5）可直接使用的特征表与图表。
+本项目包含 2026 MCM Problem C 的 **r1（要求一）投票估计** 与 **r2（要求二）方法对比**，输出后续题目（2–5）可直接使用的特征表、对比表与图表。
 
-适用对象：负责后续题目撰写与分析的项目参与者（使用本项目输出数据即可）。
+适用对象：负责后续题目撰写与分析的项目参与者（直接使用本项目输出数据与图表即可）。
 
 ---
 
 ## 目录结构
 
 - `2026_MCM_Problem_C_Data.csv`：官方原始数据
-- `req1_solve.py`：核心模型（生成投票估计、指标、特征表）
-- `req1_summary.py`：汇总图表与表格（赛季指标、争议选手画像、不确定性可视化）
-- `tune_params.py`：参数调优脚本（网格搜索，输出推荐参数）
-- `outputs/`：运行输出目录（见下方“输出文件详解”）
+- `r1/req1_solve.py`：核心模型（生成投票估计、指标、特征表）
+- `r1/req1_summary.py`：汇总图表与表格（赛季指标、争议选手画像、不确定性可视化）
+- `r1/tune_params.py`：参数调优脚本（网格搜索，输出推荐参数）
+- `r1/outputs/`：r1 运行输出目录（见下方“输出文件详解”）
+- `r2/req2_analysis.py`：要求二方法对比分析脚本
+- `r2/要求二实现方案.md`：r2 详细说明文档
+- `r2/outputs/`：r2 运行输出目录
 
 ---
 
@@ -48,10 +51,10 @@ pip install "pulp<3" numpy pandas scipy matplotlib
 
 ## 快速开始（推荐参数）
 
-推荐使用参数搜索得到的最优组合（可在 `outputs/tuning/top_params.csv` 查看第一行）。
+推荐使用参数搜索得到的最优组合（可在 `r1/outputs/tuning/top_params.csv` 查看第一行）。
 
 ```bash
-python req1_solve.py \
+python r1/req1_solve.py \
   --alpha-pop 0.4 \
   --beta 1.2 \
   --lambda-smooth 0.7 \
@@ -61,14 +64,14 @@ python req1_solve.py \
 
 运行后会生成：
 
-- `outputs/req1_vote_estimates.csv`
-- `outputs/req1_features.csv`
-- `outputs/req1_metrics.json`
+- `r1/outputs/req1_vote_estimates.csv`
+- `r1/outputs/req1_features.csv`
+- `r1/outputs/req1_metrics.json`
 
 并可再运行汇总图表：
 
 ```bash
-python req1_summary.py
+python r1/req1_summary.py
 ```
 
 ---
@@ -78,7 +81,7 @@ python req1_summary.py
 ### 1) 基础运行（默认参数）
 
 ```bash
-python req1_solve.py
+python r1/req1_solve.py
 ```
 
 适合快速生成基础结果。默认参数可用，但推荐使用调优参数。
@@ -86,7 +89,7 @@ python req1_solve.py
 ### 2) 生成不确定性输出（对应题 1“确定性度量”）
 
 ```bash
-python req1_solve.py --uncertainty
+python r1/req1_solve.py --uncertainty
 ```
 
 会在输出中增加 `uncertainty_width` 字段，并生成不确定性图表（运行 `req1_summary.py` 后）。
@@ -94,34 +97,34 @@ python req1_solve.py --uncertainty
 ### 3) 参数调优（稳健搜索，30–60 分钟）
 
 ```bash
-python tune_params.py
+python r1/tune_params.py
 ```
 
 输出：
 
-- `outputs/tuning/stage_a_results.csv`（粗筛）
-- `outputs/tuning/stage_b_results.csv`（精筛）
-- `outputs/tuning/top_params.csv`（推荐参数）
+- `r1/outputs/tuning/stage_a_results.csv`（粗筛）
+- `r1/outputs/tuning/stage_b_results.csv`（精筛）
+- `r1/outputs/tuning/top_params.csv`（推荐参数）
 
-调优完成后会自动用最优参数重跑模型，并更新 `outputs/` 的最终结果。
+调优完成后会自动用最优参数重跑模型，并更新 `r1/outputs/` 的最终结果。
 
 ### 4) 汇总图表
 
 ```bash
-python req1_summary.py
+python r1/req1_summary.py
 ```
 
 也可指定输入 CSV：
 
 ```bash
-python req1_summary.py --votes outputs/req1_vote_estimates.csv
+python r1/req1_summary.py --votes r1/outputs/req1_vote_estimates.csv
 ```
 
 ---
 
 ## 输出文件详解（重点）
 
-### 1) `outputs/req1_vote_estimates.csv`
+### 1) `r1/outputs/req1_vote_estimates.csv`
 
 用途：**最完整的周级估计数据**（后续题的主数据源）。
 
@@ -148,13 +151,13 @@ python req1_summary.py --votes outputs/req1_vote_estimates.csv
 - 题 4：用 `p_hat` 作为粉丝偏好变量，和 `J_total` 比较建模
 - 题 5：用 `momentum`/`fan_judge_gap` 构造新规则
 
-### 2) `outputs/req1_features.csv`
+### 2) `r1/outputs/req1_features.csv`
 
 用途：**后续题目（2–5）直接使用的特征表**。字段与 `req1_vote_estimates.csv` 基本一致，便于直接建模/汇总。
 
 建议以此为主表，不需要自行再拼接字段。
 
-### 3) `outputs/req1_metrics.json`
+### 3) `r1/outputs/req1_metrics.json`
 
 用途：整体一致性指标（验证模型是否复现淘汰结果）。
 
@@ -165,7 +168,7 @@ python req1_summary.py --votes outputs/req1_vote_estimates.csv
 - `EMR_denom`：EMR 统计周数
 - `B2CR_denom`：B2CR 统计周数
 
-### 4) `outputs/summary/season_metrics.csv`
+### 4) `r1/outputs/summary/season_metrics.csv`
 
 用途：赛季级别的一致性指标（跨季稳定性分析）。
 
@@ -177,11 +180,11 @@ python req1_summary.py --votes outputs/req1_vote_estimates.csv
 - `EMR`/`B2CR`：赛季指标
 - `EMR_denom`/`B2CR_denom`：赛季统计周数
 
-### 5) `outputs/summary/season_metrics.png`
+### 5) `r1/outputs/summary/season_metrics.png`
 
 用途：赛季指标可视化（可直接放论文）。
 
-### 6) `outputs/summary/weekly_uncertainty.csv`
+### 6) `r1/outputs/summary/weekly_uncertainty.csv`
 
 用途：不确定性随周次变化的统计（仅在 `--uncertainty` 后生成）。
 
@@ -191,15 +194,15 @@ python req1_summary.py --votes outputs/req1_vote_estimates.csv
 - `week`：周次
 - `uncertainty_width`：该赛季/周的平均不确定性
 
-### 7) `outputs/summary/weekly_uncertainty.png`
+### 7) `r1/outputs/summary/weekly_uncertainty.png`
 
 用途：周次平均不确定性曲线（跨季汇总）。
 
-### 8) `outputs/summary/weekly_uncertainty_heatmap.png`
+### 8) `r1/outputs/summary/weekly_uncertainty_heatmap.png`
 
 用途：季 × 周不确定性热力图，直观看出哪类赛季/周更不确定。
 
-### 9) `outputs/summary/controversy_profiles.csv`
+### 9) `r1/outputs/summary/controversy_profiles.csv`
 
 用途：争议选手的周度画像数据（题 2 可直接引用）。
 
@@ -207,11 +210,11 @@ python req1_summary.py --votes outputs/req1_vote_estimates.csv
 
 - `season`、`week`、`celebrity_name`、`J_total`、`p_hat`、`eliminated`
 
-### 10) `outputs/summary/controversy_profiles.png`
+### 10) `r1/outputs/summary/controversy_profiles.png`
 
 用途：争议选手的“评审表现 vs 粉丝支持”曲线对比图。
 
-### 11) `outputs/tuning/stage_a_results.csv` / `stage_b_results.csv`
+### 11) `r1/outputs/tuning/stage_a_results.csv` / `stage_b_results.csv`
 
 用途：参数搜索过程记录（可作为稳健性/敏感性分析材料）。
 
@@ -226,13 +229,39 @@ python req1_summary.py --votes outputs/req1_vote_estimates.csv
 - `std_EMR`/`std_B2CR`：跨季波动
 - `score`：综合评分
 
-### 12) `outputs/tuning/top_params.csv`
+### 12) `r1/outputs/tuning/top_params.csv`
 
 用途：Top 参数组合（默认取第一行作为最终推荐）。
 
-### 13) `outputs/tune_tmp/`
+### 13) `r1/outputs/tune_tmp/`
 
 用途：参数调优过程中的临时输出（可删除）。
+
+---
+
+## 要求二（r2）使用
+
+前置条件：需要先生成 `r1/outputs/req1_vote_estimates.csv`（若包含 `uncertainty_width`，r2 会自动做稳健性与分层分析）。
+
+运行方式：
+
+```bash
+python r2/req2_analysis.py
+```
+
+指定输入文件：
+
+```bash
+python r2/req2_analysis.py --votes r1/outputs/req1_vote_estimates.csv
+```
+
+关键输出：
+
+- `r2/outputs/summary.md`：自动汇总结论（含不确定性与分层分析）
+- `r2/outputs/decision_guidance.csv`：赛季规则建议表（tie 阈值默认 0.05）
+- `r2/outputs/summary_table.csv`：结构化指标汇总表
+
+完整说明与输出清单请见：`r2/要求二实现方案.md`
 
 ---
 
@@ -272,7 +301,7 @@ python req1_summary.py --votes outputs/req1_vote_estimates.csv
 
 ## 后续题目使用建议
 
-- 题 2（方法对比）：用 `req1_features.csv` 中 `p_hat`、`judge_share`、`fan_judge_gap` 对两种合并规则做模拟与对比。
+- 题 2（方法对比）：用 `r1/outputs/req1_features.csv` 中 `p_hat`、`judge_share`、`fan_judge_gap` 对两种合并规则做模拟与对比。
 - 题 3（建议）：用 `fan_judge_gap` 的分布和 EMR/B2CR 论证“公平 vs 兴奋度”。
 - 题 4（因素分析）：以 `p_hat`/`J_total` 为因变量，合并原始数据中的年龄、行业、搭档等做回归或混合效应模型。
 - 题 5（新系统）：用 `momentum` 与 `fan_judge_gap` 设计新规则（动态权重或保底机制）。

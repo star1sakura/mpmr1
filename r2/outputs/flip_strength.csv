@@ -1,0 +1,86 @@
+season,week,judge_save,cbr_elim,cbp_elim,cbr_elim_rank_in_cbp,cbp_elim_rank_in_cbr,flip_strength
+1,2,False,Kelly Monaco,Trista Sutter,2,3,3
+1,4,False,John O'Hurley,Rachel Hunter,2,2,2
+2,5,False,Tia Carrere,George Hamilton,2,2,2
+3,2,False,Sara Evans,Shanna Moakler,3,4,5
+3,5,False,Sara Evans,Willa Ford,2,3,3
+4,2,False,Paulina Porizkova,Clyde Drexler,2,3,3
+4,3,False,John Ratzenberger,Clyde Drexler,3,2,3
+4,5,False,John Ratzenberger,Clyde Drexler,3,2,3
+4,6,False,Heather Mills,John Ratzenberger,3,3,4
+5,2,False,Mark Cuban,Wayne Newton,2,5,5
+5,3,False,Mark Cuban,Wayne Newton,2,2,2
+5,7,False,Cameron Mathison,Jane Seymour,2,2,2
+5,8,False,Marie Osmond,Cameron Mathison,2,2,2
+6,7,False,Shannon Elizabeth,Cristian de la Fuente,2,3,3
+6,8,False,Marissa Jaret Winokur,Mario,2,3,3
+7,2,False,Kim Kardashian,Rocco DiSpirito,3,2,3
+7,5,False,Toni Braxton,Cloris Leachman,3,3,4
+7,7,False,Susan Lucci,Cody Linley,3,2,3
+8,2,False,Steve Wozniak,Belinda Carlisle,3,2,3
+8,4,False,Holly Madison,Steve Wozniak,2,3,3
+8,5,False,David Alan Grier,Lawrence Taylor,2,3,3
+8,6,False,Ty Murray,Steve-O,2,2,2
+8,8,False,Chuck Wicks,Melissa Rycroft,2,2,2
+8,9,False,Lil' Kim,Ty Murray,2,2,2
+9,3,False,Debi Mazar,Tom DeLay,2,3,3
+9,4,False,Chuck Liddell,Louie Vito,3,2,3
+9,5,False,Natalie Coughlin,Michael Irvin,2,3,3
+9,6,False,Melissa Joan Hart,Michael Irvin,3,3,4
+10,2,False,Aiden Turner,Buzz Aldrin,5,5,8
+10,3,False,Kate Gosselin,Buzz Aldrin,2,2,2
+10,6,False,Niecy Nash,Jake Pavelka,2,2,2
+10,7,False,Pamela Anderson,Niecy Nash,2,3,3
+11,6,False,Kyle Massey,Kurt Warner,4,2,4
+11,9,False,Kyle Massey,Brandy,3,2,3
+12,7,False,Kirstie Alley,Kendra Wilkinson,2,2,2
+13,3,False,Carson Kressley,Kristin Cavallari,4,2,4
+13,4,False,David Arquette,Chaz Bono,5,2,5
+13,5,False,Chaz Bono,Carson Kressley,2,2,2
+13,7,False,David Arquette,Nancy Grace,2,2,2
+14,4,False,Sherri Sheperd,Gladys Knight,2,2,2
+14,5,False,Melissa Gilbert,Gavin DeGraw,2,2,2
+15,2,False,Kirstie Alley,Bristol Palin,3,4,5
+15,6,False,Kelly Monaco,Emmitt Smith,3,2,3
+16,3,False,D. L. Hughley,Wynonna Judd,2,2,2
+17,5,False,Leah Remini,Bill Engvall,3,2,3
+17,7,False,Leah Remini,Bill Engvall,3,3,4
+17,8,False,Brant Daugherty,Elizabeth Berkley Lauren,2,2,2
+17,9,False,Bill Engvall,Elizabeth Berkley Lauren,2,3,3
+18,8,False,James Maslow,Danica McKellar,2,3,3
+18,10,False,James Maslow,Candace Cameron Bure,2,2,2
+19,1,False,Lolo Jones,Betsey Johnson,2,2,2
+19,4,False,Betsey Johnson,Jonathan Bennett,2,2,2
+19,9,False,Lea Thompson,Tommy Chong,2,2,2
+20,2,False,Noah Galloway,Chris Soules,4,6,8
+20,5,False,Patti LaBelle,Suzanne Somers,3,2,3
+20,6,False,Patti LaBelle,Robert Herjavec,2,2,2
+21,7,False,Alek Skarlatos,Hayes Grier,2,3,3
+21,9,False,Carlos PenaVega,Alexa PenaVega,2,4,4
+21,11,False,Alek Skarlatos,Carlos PenaVega,2,2,2
+22,4,False,Jodie Sweetin,Doug Flutie,3,3,4
+23,7,False,Maureen McCormick,Marilu Henner,2,2,2
+23,8,False,Ryan Lochte,Marilu Henner,2,3,3
+23,10,False,Calvin Johnson Jr.,Jana Kramer,3,2,3
+24,6,False,Nancy Kerrigan,David Ross,3,3,4
+24,7,False,Nancy Kerrigan,David Ross,2,3,3
+25,4,False,Derek Fisher,Nick Lachey,2,3,3
+25,6,False,Drew Scott,Nick Lachey,2,2,2
+25,8,False,Terrell Owens,Victoria Arlen,2,2,2
+26,1,False,Jamie Anderson,Johnny Damon,3,2,3
+27,4,False,Bobby Bones,Tinashe,3,4,5
+27,6,False,Mary Lou Retton,John Schneider,4,4,6
+28,7,True,Sean Spicer,Sean Spicer,1,1,0
+30,3,True,Iman Shumpert,Iman Shumpert,1,1,0
+30,6,True,Kenya Moore,Kenya Moore,1,1,0
+30,9,True,Suni Lee,Suni Lee,1,1,0
+31,5,True,Vinny Guadagnino,Vinny Guadagnino,1,1,0
+32,2,True,Mauricio Umansky,Mauricio Umansky,1,1,0
+32,6,True,Harry Jowsey,Harry Jowsey,1,1,0
+32,7,True,Harry Jowsey,Harry Jowsey,1,1,0
+33,2,True,Tori Spelling,Reginald VelJohnson,4,2,4
+33,6,True,Ilona Maher,Ilona Maher,1,1,0
+33,7,True,Dwight Howard ,Dwight Howard ,1,1,0
+34,2,True,Corey Feldman,Corey Feldman,1,1,0
+34,7,True,Andy Richter,Andy Richter,1,1,0
+34,10,True,Elaine Hendrix,Whitney Leavitt,2,3,3
