@@ -1,3 +1,5 @@
 /.venv
 /.vscode
 /论文/
+__pycache__/
+*.pyc
